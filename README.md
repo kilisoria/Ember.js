@@ -7,8 +7,8 @@ Use the MVC Pattern.
 Follow Conventions.
 URL/ URI Semantic.
 
- 
 Keys:
+
 Handlebars templates.
 Router.
 Components/ Helpers.
