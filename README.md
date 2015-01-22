@@ -1,6 +1,7 @@
 Ember.js 
 
 Main Concepts:
+
 SPA Framework to create web applications.
 Use the MVC Pattern.
 Follow Conventions.
