@@ -32,11 +32,18 @@
       <h1>Here you could see All data about the latest series</h1>
     </header>
      {{partial "series"}} 
-    <div>      
-      {{#link-to "series.new" class="btn btn-primary"}}Add{{/link-to}}
-      {{#link-to "verMas"}}Ver Más{{/link-to}}
-    </div>  
+
+
+    <div class="row">
+       <div class="pull-left">
+        {{#link-to "index"}}Back{{/link-to}}
+      </div>  
+      <div class="pull-right">      
+        {{#link-to "series.new" class="btn btn-primary"}}Add{{/link-to}}
+        {{#link-to "verMas"}}Ver Más{{/link-to}}
+      </div>
    <div>
+
     {{name}}
   </div>
   </section>   
@@ -65,8 +72,10 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="comingSoon">
+  <section>
     <h1>Coming SOON!</h1>
     {{#link-to "index"}}Back{{/link-to}}
+  </section>
 </script>
 
 
