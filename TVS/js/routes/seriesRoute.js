@@ -1,18 +1,20 @@
 
 TVS.SeriesRoute = Ember.Route.extend({
   model: function(){
-  	return ['The Walking Dead', "GOT", "House of Cards", "True Detectives"];
+  	  return this.store.find('serie');
   }
 });
 
 
 TVS.VerMasRoute = Ember.Route.extend({
   model: function(){
-  	return ['Marvel - Agents of shield', "GOTHAM", "The Big Bang Theory", "Fargo", "Flash", "Stalker", "Constantine", "Transparent", "Orange is the new Black"];
+    return this.store.find("verMas");
   }
 });
 
 
 TVS.SeriesNewRoute = Ember.Route.extend({
-  
+  model:function(){
+
+  }
 });

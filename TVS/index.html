@@ -11,72 +11,74 @@
 <body>
 
   <script type="text/x-handlebars">
-    {{outlet}}
+  {{outlet}}
   </script>
 
   <script type="text/x-handlebars" id="index">
-    <div class="jumbotron">
-        <p>
-            {{#link-to "series" class="btn btn-primary btn-lg"}}Series{{/link-to}}
-            {{#link-to "movies" class="btn btn-primary btn-lg"}}Movies{{/link-to}}
-            {{#link-to "comics" class="btn btn-primary btn-lg"}}Comics{{/link-to}}
-            {{#link-to "art" class="btn btn-primary btn-lg"}}Art{{/link-to}}
-        </p>
-    </div>
+  <div class="jumbotron">
+  <p>
+  {{#link-to "series" class="btn btn-primary btn-lg"}}Series{{/link-to}}
+  {{#link-to "movies" class="btn btn-primary btn-lg"}}Movies{{/link-to}}
+  {{#link-to "comics" class="btn btn-primary btn-lg"}}Comics{{/link-to}}
+  {{#link-to "art" class="btn btn-primary btn-lg"}}Art{{/link-to}}
+  </p>
+  </div>
   </script>
 
 
-<script type="text/x-handlebars" id="series">
+  <script type="text/x-handlebars" id="series">
   <section>
-    <header>
-      <h1>Here you could see All data about the latest series</h1>
-    </header>
-     {{partial "series"}} 
+  <header>
+  <h1>Here you could see All data about the latest series</h1>
+  </header>
+  {{partial "series"}} 
 
 
-    <div class="row">
-       <div class="pull-left">
-        {{#link-to "index"}}Back{{/link-to}}
-      </div>  
-      <div class="pull-right">      
-        {{#link-to "series.new" class="btn btn-primary"}}Add{{/link-to}}
-        {{#link-to "verMas"}}Ver Más{{/link-to}}
-      </div>
-   <div>
+  <div class="row">
+  <div class="pull-left">
+  {{#link-to "index"}}Back{{/link-to}}
+  </div>  
+  <div class="pull-right">      
+  {{#link-to "new" class="btn btn-primary"}}Add{{/link-to}}
+  {{#link-to "verMas"}}Ver Más{{/link-to}}
+  </div>
+  <div>
 
-    {{name}}
+  {{name}}
   </div>
   </section>   
-</script>
+  </script>
 
-<script type="text/x-handlebars" id="verMas">
+  <script type="text/x-handlebars" id="verMas">
   <section>
-      <header>
-     <h1>Sure!</h1> <h3>You want more series, here the complete list:</h3>
-     </header>
-        {{partial "series"}} 
-        {{#link-to "series"}}Back{{/link-to}}
+  <header>
+  <h1>Sure!</h1> <h3>You want more series, here the complete list:</h3>
+  </header>
+  {{partial "series"}} 
+  {{#link-to "series"}}Back{{/link-to}}
   </section>
-</script>
+  </script>
 
-<script type="text/x-handlebars" data-template-name="_series">
-    <ul>
-     {{#each item in model}}
-        <li>{{item}}</li>
-    {{/each}}
-    </ul>
-</script>
+  <script type="text/x-handlebars" data-template-name="_series">
+  <ul>
+  {{#each item in model}}
+  <li>{{item.title}} - {{item.channel}}</li>
+  {{/each}}
+  </ul>
+  </script>
 
-<script type="text/x-handlebars" data-template-name="series/new">
-  {{input type="text" placeholder="Enter the name of new serie" value=newSerie action="confirm"}}
-</script>
-
-<script type="text/x-handlebars" data-template-name="comingSoon">
+  <script type="text/x-handlebars" data-template-name="new">
   <section>
-    <h1>Coming SOON!</h1>
-    {{#link-to "index"}}Back{{/link-to}}
+  {{input type="text" id="new-serie" placeholder="Enter to add the name of new serie" value=newSerie action="add"}}
   </section>
-</script>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="comingSoon">
+  <section>
+  <h1>Coming SOON!</h1>
+  {{#link-to "index"}}Back{{/link-to}}
+  </section>
+  </script>
 
 
   <script src="js/libs/jquery-1.10.2.js"></script>
