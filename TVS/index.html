@@ -69,7 +69,10 @@
 
   <script type="text/x-handlebars" data-template-name="new">
   <section>
-  {{input type="text" id="new-serie" placeholder="Enter to add the name of new serie" value=newSerie action="add"}}
+  {{input type="text" class="serie-input-add" id="new-serie" placeholder="Enter to add the name of new serie" value=newSerie action="add"}}
+  <div>
+  {{#link-to "series"}}Back{{/link-to}}
+  </div>
   </section>
   </script>
 
