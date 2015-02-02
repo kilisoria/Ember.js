@@ -3,19 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>TVS - TV SERIES - All information about the series!</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
-
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
 
-  <script type="text/x-handlebars">
-  {{outlet}}
-  </script>
-
-  <script type="text/x-handlebars" id="index">
-  <div class="jumbotron">
+<script type="text/x-handlebars" id="index">
+    <div class="jumbotron">
   <p>
   {{#link-to "series" class="btn btn-primary btn-lg"}}Series{{/link-to}}
   {{#link-to "movies" class="btn btn-primary btn-lg"}}Movies{{/link-to}}
@@ -24,7 +19,6 @@
   </p>
   </div>
   </script>
-
 
   <script type="text/x-handlebars" id="series">
   <section>
@@ -40,7 +34,7 @@
   </div>  
   <div class="pull-right">      
   {{#link-to "new" class="btn btn-primary"}}Add{{/link-to}}
-  {{#link-to "verMas"}}Ver Más{{/link-to}}
+  {{#link-to "historySeries"}}Ver Más{{/link-to}}
   </div>
   <div>
 
@@ -49,7 +43,7 @@
   </section>   
   </script>
 
-  <script type="text/x-handlebars" id="verMas">
+  <script type="text/x-handlebars" id="historySeries">
   <section>
   <header>
   <h1>Sure!</h1> <h3>You want more series, here the complete list:</h3>
@@ -99,8 +93,5 @@
   <script src="js/routes/moviesRoute.js"></script>
   <script src="js/routes/comicsRoute.js"></script>
   <script src="js/routes/artRoute.js"></script>
-
-  <!-- to activate the test runner, add the "?test" query string parameter -->
-  <!-- <script src="tests/runner.js"></script> -->
 </body>
 </html>

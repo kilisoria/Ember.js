@@ -6,9 +6,9 @@ TVS.SeriesRoute = Ember.Route.extend({
 });
 
 
-TVS.VerMasRoute = Ember.Route.extend({
+TVS.HistorySeriesRoute = Ember.Route.extend({
   model: function(){
-    return this.store.find("verMas");
+    return this.store.find("historySerie");
   }
 });
 

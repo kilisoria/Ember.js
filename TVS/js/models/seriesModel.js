@@ -4,7 +4,7 @@ TVS.Serie = DS.Model.extend({
 	channel: DS.attr('string')
 });
 
-TVS.VerMas = DS.Model.extend({
+TVS.HistorySerie = DS.Model.extend({
 	title: DS.attr('string'),
 	channel: DS.attr('string')
 });
@@ -18,8 +18,9 @@ TVS.Serie.FIXTURES = [
 {id:6, title: "Mom", channel: "Warner Channel"}
 ];
 
-TVS.VerMas.FIXTURES = [
+TVS.HistorySerie.FIXTURES = [
 {id:7, title: "Fargo", channel: "Netflix"},
 {id:8, title: "Marvel - Agent of Shield", channel: "ABC"},
 {id:9, title: "Transparent", channel: "Amazon"},
+{id:10, title: "Flash", channel: "Warner Channel"}
 ];
