@@ -12,6 +12,7 @@
   <script type="text/x-handlebars" id="index">
   <div class="jumbotron">
   <p>
+    <h2>Enjoy!</h2>
   {{#link-to "series" class="btn btn-primary btn-lg"}}Series{{/link-to}}
   {{#link-to "movies" class="btn btn-primary btn-lg"}}Movies{{/link-to}}
   {{#link-to "comics" class="btn btn-primary btn-lg"}}Comics{{/link-to}}
@@ -55,27 +56,28 @@
   </script>
   <!-- History Series -->
 
-  <!-- Serie  Template Partial -->
+  <!-- Serie Template Partial -->
   <script type="text/x-handlebars" data-template-name="_series">
   <ul>
   {{#each item in model}}
   <li>{{item.title}} - 
-      {{item.channel}} - 
-      <a {{action "openSerieOficialWeb" item.web}}>{{item.web}}</a> - 
-      <span class="serie-item-status">{{item.status}}</span>
-      <div class="serie-item-delete" {{action "remove" item.id}} title="Remove"></div>
+  {{item.channel}} - 
+  <a {{action "openSerieOficialWeb" item.web}}>{{item.web}}</a> - 
+  <span class="serie-item-status">{{item.status}}</span>    
+  <div class="serie-item-delete" {{action "remove" item.id}} title="Remove"></div>
+  <div class="serie-item-edit" {{action "detail"  item.id}} title="see details"></div>
   </li>
   {{/each}}
   </ul>
   </script>
-  <!-- /Serie  Template Partial -->
+  <!-- /Serie Template Partial -->
 
   <!-- New Serie Template -->
   <script type="text/x-handlebars" data-template-name="new">
   <section>
-    <header>
+  <header>
   <h3>SERIES</h3>
-   <h4>New - Enter the basic data for the serie:</h4>
+  <h4>New - Enter the basic data for the serie:</h4>
   </header>
   <div>
   <div class="serie-new-field-container">
@@ -91,6 +93,18 @@
   </section>
   </script>
   <!-- /New Serie Template -->
+
+  <!--Detail Serie Template -->
+  <script type="text/x-handlebars" id="serie">
+  <section>
+  <header>  
+  <h3>SERIES</h3>
+  <h4>Detail - About the serie selected:</h4>
+   <h1>{{model.title}}*</h1>
+   <p>* Coming soon more details!  </p>
+  </section>
+  </script>
+  <!-- /Detail Serie Template -->
 
   <!-- Coming soon Template --> 
   <script type="text/x-handlebars" data-template-name="comingSoon">

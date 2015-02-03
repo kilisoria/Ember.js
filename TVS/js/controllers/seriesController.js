@@ -15,6 +15,10 @@ TVS.SeriesController = Ember.ObjectController.extend({
 				serie.get('isDeleted');
 				serie.save();	
 			})
+		},
+		detail: function(id){
+			console.log(id);
+			this.transitionToRoute('serie', {id: id});
 		}
 	}
 });
@@ -54,5 +58,11 @@ TVS.HistorySeriesController = Ember.ObjectController.extend({
 				serie.save();	
 			})
 		}
+	}
+});
+
+TVS.SerieController = Ember.ObjectController.extend({
+	actions:{
+
 	}
 });

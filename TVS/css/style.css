@@ -38,3 +38,12 @@ a{
 	float: right;
 	cursor: pointer;
 }
+
+.serie-item-edit{
+	background: url('../imgs/edit.png');
+	width: 16px;
+	height: 16px;
+	float: right;
+	cursor: pointer;
+	margin-right: 2px;
+}

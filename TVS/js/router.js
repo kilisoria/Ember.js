@@ -1,14 +1,15 @@
 TVS.Router.map(function() {
 
-  this.resource('series', function() {
-  });
+	this.route('series');
 
-  this.resource('new', { path: '/post/new' });
+	this.resource('serie', {path:'serie/:id'});
 
-   this.route("historySeries");
-   this.route("movies");
-   this.route("comics");
-   this.route("art");
+	this.resource('new', { path: '/post/new' });
+
+	this.route("historySeries");
+	this.route("movies");
+	this.route("comics");
+	this.route("art");
 
 });
 
