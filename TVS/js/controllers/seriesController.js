@@ -63,6 +63,8 @@ TVS.HistorySeriesController = Ember.ObjectController.extend({
 
 TVS.SerieController = Ember.ObjectController.extend({
 	actions:{
-
+			ok:function(){
+				this.transitionToRoute('series');
+			}
 	}
 });
