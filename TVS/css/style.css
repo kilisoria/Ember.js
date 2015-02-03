@@ -3,16 +3,19 @@ body{
 }
 
 section{
- background-color: #fff;
- min-height: 400px;
- width: 80%;
- padding: 20px;
+	background-color: #fff;
+	min-height: 400px;
+	width: 80%;
+	padding: 20px;
 }
 
+a{
+	cursor: pointer;	
+}
 
 /* Put your CSS here */
 .ember-application {
-    margin: 20px;
+	margin: 20px;
 }
 
 .serie-input-add{
@@ -21,4 +24,17 @@ section{
 
 .serie-new-field-container{
 	margin: 8px 0px;
+}
+
+.serie-item-status{
+	color:#FF9175;
+	font-size: 14px;
+}
+
+.serie-item-delete{
+	background: url('../imgs/delete.png');
+	width: 16px;
+	height: 16px;
+	float: right;
+	cursor: pointer;
 }

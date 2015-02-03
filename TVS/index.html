@@ -23,7 +23,7 @@
   <script type="text/x-handlebars" id="series">
   <section>
   <header>
-  <h1>Here you could see All data about the latest series</h1>
+  <h3>SERIES</h3><h4>Here you could see the main data about the latest series</h4>
   </header>
   {{partial "series"}} 
 
@@ -37,57 +37,69 @@
   {{#link-to "historySeries"}}See more{{/link-to}}
   </div>
   <div>
-
   {{name}}
   </div>
   </section>   
   </script>
 
+  <!-- History Series -->
   <script type="text/x-handlebars" id="historySeries">
   <section>
   <header>
-  <h1>Sure!</h1> <h3>You want more series, here the complete list:</h3>
+  <h3>SERIES</h3>
+  <h4>Sure! You want more series, here the complete list:</h4>
   </header>
   {{partial "series"}} 
   {{#link-to "series"}}Back{{/link-to}}
   </section>
   </script>
+  <!-- History Series -->
 
+  <!-- Serie  Template Partial -->
   <script type="text/x-handlebars" data-template-name="_series">
   <ul>
   {{#each item in model}}
-  <li>{{item.title}} - {{item.channel}}</li>
+  <li>{{item.title}} - 
+      {{item.channel}} - 
+      <a {{action "openSerieOficialWeb" item.web}}>{{item.web}}</a> - 
+      <span class="serie-item-status">{{item.status}}</span>
+      <div class="serie-item-delete" {{action "remove" item.id}} title="Remove"></div>
+  </li>
   {{/each}}
   </ul>
   </script>
-
-
+  <!-- /Serie  Template Partial -->
 
   <!-- New Serie Template -->
   <script type="text/x-handlebars" data-template-name="new">
   <section>
-  <h3>Enter the main data for the new serie:</h3>
+    <header>
+  <h3>SERIES</h3>
+   <h4>New - Enter the basic data for the serie:</h4>
+  </header>
   <div>
   <div class="serie-new-field-container">
   {{input type="text" class="serie-input-add" placeholder="Title" value=newSerieTitle }}
   </div>
-   <div class="serie-new-field-container">  
+  <div class="serie-new-field-container">  
   {{input type="text" class="serie-input-add" placeholder="Channel" value=newSerieChannel }}
   </div>
   </div>
   {{#link-to "series"}}Back{{/link-to}}
-  <button {{action "add"}}  class="btn btn-primary">Confirm</button> 
+  <button {{action "add"}} {{bind-attr disabled="existDataEnteredToCreateSerie"}} class="btn btn-primary">Confirm</button> 
   </div>
   </section>
   </script>
   <!-- /New Serie Template -->
 
+  <!-- Coming soon Template --> 
   <script type="text/x-handlebars" data-template-name="comingSoon">
   <section>
   <h1>Coming SOON!</h1>
   {{#link-to "index"}}Back{{/link-to}}
   </section>
   </script>
+  <!-- /Coming soon Template --> 
 
 
   <script src="js/libs/jquery-1.10.2.js"></script>
