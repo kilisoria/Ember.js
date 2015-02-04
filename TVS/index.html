@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TVS - TV SERIES - All information about the series!</title>
+  <title>TVS - TV SERIES - More movies, comics, art, etc.</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css">
@@ -12,7 +12,7 @@
   <script type="text/x-handlebars" id="index">
   <div class="jumbotron">
   <p>
-    <h2>Enjoy!</h2>
+  <h2>Enjoy!</h2>
   {{#link-to "series" class="btn btn-primary btn-lg"}}Series{{/link-to}}
   {{#link-to "movies" class="btn btn-primary btn-lg"}}Movies{{/link-to}}
   {{#link-to "comics" class="btn btn-primary btn-lg"}}Comics{{/link-to}}
@@ -27,8 +27,6 @@
   <h3>SERIES</h3><h4>Here you could see the main data about the latest series</h4>
   </header>
   {{partial "series"}} 
-
-
   <div class="row">
   <div class="pull-left">
   {{#link-to "index"}}Back{{/link-to}}
@@ -64,7 +62,7 @@
   {{item.channel}} - 
   <a {{action "openSerieOficialWeb" item.web}}>{{item.web}}</a> - 
   <span class="serie-item-status">{{item.status}}</span>    
-  <div class="serie-item-delete" {{action "remove" item.id}} title="Remove"></div>
+  <div {{action "remove" item.id}}  {{bind-attr class="canRemoveSerie:serie-item-delete"}} title="Remove"></div>
   <div class="serie-item-edit" {{action "detail"  item.id}} title="see details"></div>
   </li>
   {{/each}}
@@ -86,6 +84,9 @@
   <div class="serie-new-field-container">  
   {{input type="text" class="serie-input-add" placeholder="Channel" value=newSerieChannel }}
   </div>
+  <div class="serie-new-field-container">  
+  {{input type="text" class="serie-input-add" placeholder="Oficial Web" value=newSerieWeb }}
+  </div>
   </div>
   {{#link-to "series"}}Back{{/link-to}}
   <button {{action "add"}} {{bind-attr disabled="existDataEnteredToCreateSerie"}} class="btn btn-primary">Confirm</button> 
@@ -100,11 +101,11 @@
   <header>  
   <h3>SERIES</h3>
   <h4>Detail - About the serie selected:</h4>
-   <h1>{{model.title}}*</h1>
-   <p>* Coming soon more details!  </p>
-   <div>
-    <button {{action "ok"}} class="btn btn-primary">Ok</button> 
-   </div>
+  <h1>{{model.title}}*</h1>
+  <p>* Coming soon more details!  </p>
+  <div>
+  <button {{action "ok"}} class="btn btn-primary">Ok</button> 
+  </div>
   </section>
   </script>
   <!-- /Detail Serie Template -->
@@ -117,6 +118,53 @@
   </section>
   </script>
   <!-- /Coming soon Template --> 
+
+  <!-- Movie Template -->
+  <script  type="text/x-handlebars" id="movies">
+  <section>
+  <img src="imgs/movie-background.jpg"  /> 
+  <div>
+  {{#link-to "index"}}Home{{/link-to}}
+  {{#link-to "movieTickets"}}<div class="movie-get-tickets">get your TICKETS!</div>{{/link-to}}
+  </div>
+  </section>
+  </script>
+  
+  <script type="text/x-handlebars" id="movieTickets">
+  <section>
+  <div>
+  Sorry! in this moment, we have some issues with our ticket sale section, do not worry you could get your ones directly from the 
+  <a {{action "goCinemarkWeb"}}>Web.</a>
+  </div>
+  </section>
+  </script>
+  
+
+  <!-- /Movie Template -->
+
+  <!-- Comics Template -->
+  <script type="text/x-handlebars" data-template-name="comics">
+  <section>
+  <img src="imgs/comic-background.jpg"  /> 
+  <div>
+  {{#link-to "comics.webs"}}Webs{{/link-to}}
+  {{#link-to "comics.events"}}Events{{/link-to}}
+  {{outlet}}
+  </div>
+  </section>
+  </script>
+
+  <script type="text/x-handlebars" id="comics/webs">
+  <section>
+  <div>
+  <ul>
+
+  </ul>
+  </div>
+  </section>
+  </script>
+
+  <!-- /Comics Template -->
 
 
   <script src="js/libs/jquery-1.10.2.js"></script>
@@ -134,5 +182,8 @@
   <script src="js/routes/moviesRoute.js"></script>
   <script src="js/routes/comicsRoute.js"></script>
   <script src="js/routes/artRoute.js"></script>
+
+  <script src="js/controllers/moviesController.js"></script>
+
 </body>
 </html>

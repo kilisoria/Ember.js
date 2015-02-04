@@ -1,20 +1,23 @@
 
 TVS.SeriesController = Ember.ObjectController.extend({
 	serieWeb: '',
-
+	canRemoveSerie: true,
 	actions:{
 		new: function(){			
 			Ember.Route.transitionTo('new');
 		},
-		openSerieOficialWeb: function(web){
-			window.open(web,'_blank');	
+		openSerieOficialWeb: function(url){
+			window.open(url,'_blank');	
 		},
 		remove: function(id){
-			this.store.find('serie', id).then(function(serie){
-				serie.deleteRecord();
-				serie.get('isDeleted');
-				serie.save();	
-			})
+			if(confirm('Are you sure to want to delete this serie of the collection?')){
+				this.store.find('serie', id).then(function(serie){
+					serie.deleteRecord();
+					serie.get('isDeleted');
+					serie.save();
+
+				})
+			}
 		},
 		detail: function(id){
 			console.log(id);
@@ -50,21 +53,19 @@ TVS.NewController = Ember.ObjectController.extend({
 });
 
 TVS.HistorySeriesController = Ember.ObjectController.extend({
+	canRemoveSerie: false,
 	actions:{
-		remove: function(id){
-			this.store.find('historySerie', id).then(function(serie){
-				serie.deleteRecord();
-				serie.get('isDeleted');
-				serie.save();	
-			})
+		detail: function(id){
+			console.log(id);
+			this.transitionToRoute('serie', {id: id});
 		}
 	}
 });
 
 TVS.SerieController = Ember.ObjectController.extend({
 	actions:{
-			ok:function(){
-				this.transitionToRoute('series');
-			}
+		ok:function(){
+			this.transitionToRoute('series');
+		}
 	}
 });

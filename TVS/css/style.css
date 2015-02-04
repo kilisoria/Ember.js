@@ -47,3 +47,9 @@ a{
 	cursor: pointer;
 	margin-right: 2px;
 }
+
+.movie-get-tickets{
+	color:#FF9175;
+	font-size: 16px;
+	float: right;
+}
