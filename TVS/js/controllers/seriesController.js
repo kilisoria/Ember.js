@@ -27,6 +27,9 @@ TVS.SeriesController = Ember.ObjectController.extend({
 		goMovieTicket: function(){
 			// Calls to another controller.
 			this.get('controllers.movie_tickets').send('goCinemarkWeb');	
+		},
+		myFavorite: function(){
+			return "The Walking Dead";
 		}
 	}
 });
