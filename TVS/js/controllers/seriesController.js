@@ -2,6 +2,7 @@
 TVS.SeriesController = Ember.ObjectController.extend({
 	serieWeb: '',
 	canRemoveSerie: true,
+	needs:['movie_tickets'],
 	actions:{
 		new: function(){			
 			Ember.Route.transitionTo('new');
@@ -22,6 +23,10 @@ TVS.SeriesController = Ember.ObjectController.extend({
 		detail: function(id){
 			console.log(id);
 			this.transitionToRoute('serie', {id: id});
+		},		
+		goMovieTicket: function(){
+			// Calls to another controller.
+			this.get('controllers.movie_tickets').send('goCinemarkWeb');	
 		}
 	}
 });

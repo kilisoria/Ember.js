@@ -28,16 +28,21 @@
   </header>
   {{partial "series"}} 
   <div class="row">
-  <div class="pull-left">
-  {{#link-to "index"}}Back{{/link-to}}
-  </div>  
-  <div class="pull-right">      
-  {{#link-to "new" class="btn btn-primary"}}Add{{/link-to}}
-  {{#link-to "historySeries"}}See more{{/link-to}}
+    <div class="pull-left">
+    {{#link-to "index"}}Home{{/link-to}}
+    </div>  
+    <div class="pull-right">      
+    {{#link-to "new" class="btn btn-primary"}}Add{{/link-to}}
+    {{#link-to "historySeries"}}See more{{/link-to}}
+    </div>
   </div>
-  <div>
-  {{name}}
+
+<div class="row">
+<div class="pull-left">
+    <a {{action "goMovieTicket"}} class="serie-get-movie-ticket">Get now your tickets for "Jupiter Ascending"</a>
   </div>
+</div>
+
   </section>   
   </script>
 
@@ -119,7 +124,7 @@
   </script>
   <!-- /Coming soon Template --> 
 
-  <!-- Movie Template -->
+  <!-- MOVIE Template -->
   <script  type="text/x-handlebars" id="movies">
   <section>
   <img src="imgs/movie-background.jpg"  /> 
@@ -136,17 +141,19 @@
   Sorry! in this moment, we have some issues with our ticket sale section, do not worry you could get your ones directly from the 
   <a {{action "goCinemarkWeb"}}>Web.</a>
   </div>
+  <div>
+   {{#link-to "movies"}}Back{{/link-to}}
+  </div>
   </section>
   </script>
-  
+  <!-- /MOVIE Template -->
 
-  <!-- /Movie Template -->
-
-  <!-- Comics Template -->
+  <!-- COMICS Template -->
   <script type="text/x-handlebars" data-template-name="comics">
   <section>
   <img src="imgs/comic-background.jpg"  /> 
   <div>
+  {{#link-to "index"}}Home{{/link-to}}
   {{#link-to "comics.webs"}}Webs{{/link-to}}
   {{#link-to "comics.events"}}Events{{/link-to}}
   {{outlet}}
@@ -163,8 +170,7 @@
   </div>
   </section>
   </script>
-
-  <!-- /Comics Template -->
+  <!-- /COMICS Template -->
 
 
   <script src="js/libs/jquery-1.10.2.js"></script>

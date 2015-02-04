@@ -21,7 +21,6 @@ TVS.SeriesNewRoute = Ember.Route.extend({
 
 TVS.SerieRoute = Ember.Route.extend({
 	model: function(params){
-		console.log(this.store.find('serie', params.id));
 		return this.store.find('serie', params.id);
 	}
 });
