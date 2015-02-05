@@ -1,0 +1,18 @@
+h2{
+	color:#000;
+}
+
+.main-container{
+	background: url('/assets/images/background.jpg');
+	width: auto;
+	height: 977px;
+}
+
+.section-container{
+	background-color: #818181;
+	color: #a3d0d0;
+	height: 800px;
+	margin: 0 auto;
+	opacity: 0.9;
+	width: 800px;
+}
