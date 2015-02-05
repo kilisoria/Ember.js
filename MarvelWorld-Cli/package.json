@@ -1,7 +1,7 @@
 {
   "name": "marvel-world-cli",
   "version": "0.0.0",
-  "description": "Small description for marvel-world-cli goes here",
+  "description": "The Main idea is learn Ember-Cli creating this site about the Marvel world.",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -16,7 +16,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "kilisoria",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.0",
