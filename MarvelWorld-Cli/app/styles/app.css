@@ -13,6 +13,17 @@ h2{
 	color: #a3d0d0;
 	height: 800px;
 	margin: 0 auto;
-	opacity: 0.9;
+	opacity: 0.8;
 	width: 800px;
+}
+
+.logo{
+	background: url('/assets/images/logo.gif');
+	float: left;
+    height: 117px;
+    width: 300px;
+}
+
+.menu-container{
+	padding-top: 20px;
 }

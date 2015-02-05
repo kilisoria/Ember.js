@@ -8,6 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route("comics");
   this.route("movies");
+  this.route("events");
+  this.route("tv");
+  this.route("games");
 });
 
 export default Router;
