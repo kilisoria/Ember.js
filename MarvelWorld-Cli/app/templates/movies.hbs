@@ -1,3 +1,11 @@
-<div>
-	Movies
+<div class="movie-container">
+	<ul class="list-undstyled">
+		{{#each}}
+		<li>
+			{{#link-to 'movie' this}}			
+			{{title}}
+			{{/link-to}}
+		</li>
+		{{/each}}
+	</ul>	
 </div>

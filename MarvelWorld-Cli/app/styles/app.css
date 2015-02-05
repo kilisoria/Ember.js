@@ -2,15 +2,20 @@ h2{
 	color:#000;
 }
 
+a{
+	color:#000;
+}
+
 .main-container{
 	background: url('/assets/images/background.jpg');
 	width: auto;
 	height: 977px;
+	padding-top: 46px;
 }
 
 .section-container{
 	background-color: #818181;
-	color: #a3d0d0;
+	color: #fff;
 	height: 800px;
 	margin: 0 auto;
 	opacity: 0.8;
@@ -18,12 +23,34 @@ h2{
 }
 
 .logo{
-	background: url('/assets/images/logo.gif');
+	background: url('/assets/images/logo.jpg');
 	float: left;
-    height: 117px;
-    width: 300px;
+	height: 107px;
+	width: 280px;
 }
 
 .menu-container{
 	padding-top: 20px;
+}
+
+.menu-container a:nth-child(2){
+	margin-left: 12px;
+}
+
+.movie-container{
+	clear: both;
+	font-size: 28px;
+}
+
+.movie-container ul li{
+	margin-left: 12px;
+}
+
+.movie-brief{
+	background-color: #fff;
+	color: #000;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	margin: 40px 20px;
 }
