@@ -2,18 +2,21 @@ import Ember from 'ember';
 import config from './config/environment';
 
 var Router = Ember.Router.extend({
-	location: config.locationType
+    location: config.locationType
 });
 
 Router.map(function() {
-	this.route("comics");
+  this.route("comics");
 
-	this.resource("movies");
-	this.resource("movie",{path:"/movies/:movie_id"});
+  this.resource("movies");
+  this.resource("movie",{path:"/movies/:movie_id"});
 
-	this.route("events");
-	this.route("tv");
-	this.route("games");
+  this.route("events");
+  this.route("tv");
+
+  this.resource("games",function(){
+      this.resource("game", {path:"games/:game_id"});		
+    });
 });
 
 export default Router;

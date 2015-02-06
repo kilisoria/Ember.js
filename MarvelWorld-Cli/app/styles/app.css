@@ -3,7 +3,7 @@ h2{
 }
 
 a{
-	color:#000;
+	color:#fff;
 }
 
 .main-container{
@@ -37,9 +37,13 @@ a{
 	margin-left: 12px;
 }
 
+/* Movie */
 .movie-container{
 	clear: both;
 	font-size: 28px;
+	background-color: #4791DA;
+	padding-bottom: 12px;
+	margin-bottom: 12px;
 }
 
 .movie-container ul li{
@@ -55,10 +59,58 @@ a{
 	margin: 40px 20px;
 }
 
+/* Games */
+.game-container{
+	clear: both;
+	font-size: 18px;
+	background-color: green;
+}
+
+.game-detail-container{
+	background-color: #94FF94;
+	border-radius: 25px;
+	border: 1px solid #000;
+	color:#000;
+	height: 400px;
+	padding: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Comics */
+.comics-container{
+	clear: both;
+	background-color: #FF3300;
+	color: #fff !important;
+}
+
+/* TV */
+.tv-container{
+	clear: both;
+	background-color: #FFFF66;
+	color: #fff !important;	
+}
+
+/* Events*/
+.events-container{
+	clear: both;
+	background-color: #FF6699;
+	color: #fff !important;	
+}
+
+/* Common */
 .coming-soon-container{
 	clear: both;	
 	color:#000;
 	padding: 40px;
 	font-size: 32px;
 	font-weight: bold;
+}
+
+.show{
+	display: inline-block;;
+}
+
+.hide{
+	display: none;
 }

@@ -1,4 +1,8 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
+export default Ember.ArrayController.extend({
+	init: function(){
+		this._super();
+		this.set('isGameDetailVisible', false);
+	}
 });
