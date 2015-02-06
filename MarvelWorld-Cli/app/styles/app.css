@@ -54,3 +54,11 @@ a{
 	font-weight: bold;
 	margin: 40px 20px;
 }
+
+.coming-soon-container{
+	clear: both;	
+	color:#000;
+	padding: 40px;
+	font-size: 32px;
+	font-weight: bold;
+}
