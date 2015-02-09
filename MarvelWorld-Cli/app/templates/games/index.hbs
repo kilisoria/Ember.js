@@ -1,16 +1,16 @@
 <div class="game-container">
-	<h3>Games</h3>
+	<h3>{{upper-case "Games"}}</h3>
 	<ul class="list-undstyled">
 		{{#each}}
 		<li>
-			{{#link-to 'game' this}}			
+			{{#link-to 'games.game' this}}			
 			{{title}}
 			{{/link-to}}
 		</li>
 		{{/each}}
 	</ul>
 </div>
-<div {{bind-attr class="isGameDetailVisible:game-detail-container"}}>
+<div class="game-detail-container">
 	{{outlet}}
 </div>	
 

@@ -5,5 +5,5 @@ export default DS.Model.extend({
 	brief: DS.attr('string'),
 	code: function(){
 		return '000001234A#' + this.get('id');
-	}.property('id','title')
+	}.property('id')
 });
