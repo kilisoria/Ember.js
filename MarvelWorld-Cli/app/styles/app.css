@@ -18,7 +18,7 @@ a{
 	color: #fff;
 	height: 800px;
 	margin: 0 auto;
-	opacity: 0.8;
+	opacity: 0.9;
 	width: 800px;
 }
 
@@ -60,23 +60,38 @@ a{
 }
 
 .movie-review-container{
-	display: inline-block;
+	color: #000;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px;
 }
 
 .movie-review-container div{
 	float:left;
+
 }
 
 .movie-review-container select{
 	color:#000;
-	font-size: 16px;
+	font-size: 12px;
 }
 
-.movie-item-date{
+.movie-item-small{
 	font-weight: bold;
 	font-style: italic;
 	font-size: 14px;
 	color:#000;
+}
+
+.movie-actors-container{
+  background-color: #ffffce;
+    color: #000;
+    font-size: 14px;
+    margin: 40px 20px;
+}
+
+.movie-actor{
+	clear: both;
 }
 
 /* Games */

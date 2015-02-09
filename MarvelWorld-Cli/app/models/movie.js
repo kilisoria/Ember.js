@@ -8,6 +8,7 @@ export default DS.Model.extend({
 	date: DS.attr('string', {
           defaultValue: function() { return new Date(); }
       }),
+	profile: DS.belongsTo('profile'),
 	code: function(){
 		return '000001234A#' + this.get('id');
 	}.property('id')
