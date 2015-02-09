@@ -6,7 +6,8 @@ export default Ember.Controller.extend({
 	checkReviewChanged: function(){
 		var amount = this.get('reviewCountChanged');
 		amount++;
-		this.set('reviewCountChanged', amount);			
+		this.set('reviewCountChanged', amount);		
+		console.log('Observers');	
 		console.log(amount);
 	}.observes('model.review')	
 });
