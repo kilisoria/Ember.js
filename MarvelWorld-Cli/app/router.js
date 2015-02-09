@@ -6,22 +6,20 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-	this.route("comics");
-
-  //this.resource("movies");
-  //this.resource("movie",{path:"/movies/:movie_id"});
 
   this.resource("movies",function(){
-  	this.route("movie", {path:"view/:movie_id"});		
+  	this.route("view", {path:"view/:movie_id"});		
+  });
+
+  this.route("comics");
+ 
+  this.resource("games",function(){
+    this.route("view", {path:"view/:game_id"});   
   });
 
 
   this.route("events");
   this.route("tv");
-
-  this.resource("games",function(){
-  	this.route("game", {path:"view/:game_id"});		
-  });
 });
 
 export default Router;
