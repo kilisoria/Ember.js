@@ -1,4 +1,4 @@
-h2{
+h2, h3{
 	color:#000;
 }
 
@@ -16,7 +16,7 @@ a{
 .section-container{
 	background-color: #818181;
 	color: #fff;
-	height: 800px;
+	height: 862px;
 	margin: 0 auto;
 	opacity: 0.9;
 	width: 800px;
@@ -50,13 +50,16 @@ a{
 	margin-left: 12px;
 }
 
+.movie-container img{
+	margin: 12px 0 0 14px;
+}
+
 .movie-brief{
 	background-color: #fff;
 	color: #000;
 	font-size: 16px;
 	font-style: italic;
-	font-weight: bold;
-	margin: 40px 20px;
+	margin: 10px 20px;
 }
 
 .movie-review-container{
@@ -81,13 +84,14 @@ a{
 	font-style: italic;
 	font-size: 14px;
 	color:#000;
+	margin-left: 20px;
 }
 
 .movie-actors-container{
   background-color: #ffffce;
     color: #000;
     font-size: 14px;
-    margin: 40px 20px;
+    margin: 10px 20px;
 }
 
 .movie-actor{
@@ -104,6 +108,30 @@ a{
 
 .movie-actor-fav{
   font-weight: bold;
+  margin: 4px 0px;
+}
+
+.movie-title{
+	font-size: 24px;
+	font-family: cursive;
+	font-weight: bold;
+	color:#000;
+}
+
+.movie-rating-excellent{
+	background: url('/assets/images/gold-star.jpg');
+	width: 80px;
+	height: 80px;
+	float: right;
+}
+
+.movie-watches{
+	color:#000;
+	font-size: 14px;
+}
+
+.movie-watches span{
+	font-size: 16px;	
 }
 
 /* Games */

@@ -10,6 +10,8 @@
 		{{/each}}
 	</ul>
 	<div>
-		<a {{action "openModal" "modal" model}} class="actors-link">[SEE ALL ACTORS!]</a>		
+		<div class="movie-watches">(*) The movie with MAX watches has: <span>{{maxWatches}}</span></div>
+		<div class="movie-watches">(*) The movie with MIN watches has: <span>{{minWatches}}</span></div>
+		<!-- <a {{action "openModal" "modal" model}} class="actors-link">[SEE ALL ACTORS!]</a>		 -->
 	</div>	
 </div>

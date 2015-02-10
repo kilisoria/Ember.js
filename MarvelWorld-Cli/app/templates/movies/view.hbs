@@ -1,5 +1,8 @@
 <div class="movie-container">
-	<div><span>CODE:</span>{{model.code}} >> {{upper-case model.title}}</div>
+	<img  {{bind-attr src=model.picThumbnail}}>
+	<span>CODE:</span>{{model.code}} - <span class="movie-title">{{upper-case model.title}}</span>
+	<div {{bind-attr class="model.hasGoodRating:movie-rating-excellent"}}  ></div>
+	<hr>
 	<div class="movie-item-small">{{model.date}}</div>
 	{{#if model.profile}}
 	<div class="movie-item-small">PROFILE: {{upper-case model.profile.name}}</div>
@@ -11,7 +14,11 @@
 		{{#each actor in model.actors}}
 		<div class="movie-actor">{{actor.name}}</div>
 		{{/each}}
-		<div class="movie-actor-fav">The favorite actor is: {{model.favActor}}</div>
+		{{#each fav in favActor}}
+		<div class="movie-actor-fav">The favorite actor is: 
+			{{fav.name}}
+		</div>
+		{{/each}}
 	</div>
 
 	<div class="movie-review-container">
