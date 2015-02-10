@@ -6,7 +6,6 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-
   this.resource("movies",function(){
   	this.route("view", {path:"view/:movie_id"});		
   });
@@ -18,7 +17,7 @@ Router.map(function() {
   });
 
   this.resource("events", function(){
-    this.resource("event", {path:"view/:event_id"});
+    this.route("event", {path:"view/:event_id"});
   });
 
   this.route("tv");
