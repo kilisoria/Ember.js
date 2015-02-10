@@ -2,14 +2,13 @@
 	<h3>{{upper-case "events"}}</h3>
 	<ul class="list-undstyled">
 		{{#each}}
-		<li>
-			{{#link-to 'event' this.id}}			
+		<li>				
 			{{code}}
-			{{/link-to}}
+		
 		</li>
 		{{/each}}
 	</ul>
 </div>
-<div class="game-detail-container">
+<div class="event-detail-container">
 	{{outlet}}
 </div>	
