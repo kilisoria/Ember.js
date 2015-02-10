@@ -1,13 +1,15 @@
 <div class="movie-container">
 	<div><span>CODE:</span>{{model.code}} >> {{upper-case model.title}}</div>
 	<div class="movie-item-small">{{model.date}}</div>
+	{{#if model.profile}}
 	<div class="movie-item-small">PROFILE: {{upper-case model.profile.name}}</div>
+	{{/if}}
 	<div class="movie-brief">
 		{{model.brief}}
 	</div>
 	<div class="movie-actors-container">	
 		{{#each actor in model.actors}}
-			<div class="movie-actor">{{actor.name}}</div>
+		<div class="movie-actor">{{actor.name}}</div>
 		{{/each}}
 	</div>
 	<div class="movie-review-container">

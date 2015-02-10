@@ -1,3 +1,15 @@
 <div class="events-container">
-	{{partial "comingsoon"}}
+	<h3>{{upper-case "events"}}</h3>
+	<ul class="list-undstyled">
+		{{#each}}
+		<li>
+			{{#link-to 'event' this.id}}			
+			{{code}}
+			{{/link-to}}
+		</li>
+		{{/each}}
+	</ul>
 </div>
+<div class="game-detail-container">
+	{{outlet}}
+</div>	
