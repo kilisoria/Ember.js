@@ -102,6 +102,10 @@ a{
     margin-left: 10px;
 }
 
+.movie-actor-fav{
+  font-weight: bold;
+}
+
 /* Games */
 .game-container{
 	clear: both;
