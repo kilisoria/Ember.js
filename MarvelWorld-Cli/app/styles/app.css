@@ -40,10 +40,15 @@ a{
 /* Movie */
 .movie-container{
 	clear: both;
-	font-size: 28px;
+	font-size: 18px;
 	background-color: #4791DA;
 	padding-bottom: 12px;
 	margin-bottom: 12px;
+	min-height: 600px;
+}
+
+.movie-container ul{
+	list-style-image: url('/assets/images/movie-list-stype.jpg');
 }
 
 .movie-container ul li{
@@ -139,18 +144,23 @@ a{
 	clear: both;
 	font-size: 18px;
 	background-color: green;
+	min-height: 600px;
+}
+
+.game-container ul{
+	list-style-image: url('/assets/images/game-list-style.png');
 }
 
 .game-detail-container{
-	background-color: #94FF94;
-	border-radius: 25px;
-	border: 1px solid #000;
-	color:#000;
-	height: 400px;
-	padding: 20px;
-	width: 80%;
-	margin: 0 auto;
-	font-size: 22px;
+  background-color: #94ff94;
+    border: 1px solid #000;
+    border-radius: 25px;
+    color: #000;
+    font-size: 22px;
+    height: 400px;
+    margin: 108px auto;
+    padding: 20px;
+    width: 80%;
 }
 
 /* Comics */
@@ -171,7 +181,23 @@ a{
 .events-container{
 	clear: both;
 	background-color: #FF6699;
-	color: #fff !important;	
+	color: #fff !important;		
+}
+
+.events-container ul{
+	list-style-image: url('/assets/images/event-list-style.png')
+}
+
+.event-detail-container{
+    background-color: #ffccff;
+    border: 1px solid #000;
+    border-radius: 25px;
+    color: #000;
+    font-size: 22px;
+    height: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    width: 96%;
 }
 
 /* Common */

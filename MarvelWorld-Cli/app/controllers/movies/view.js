@@ -20,6 +20,8 @@ export default Ember.Controller.extend({
 			alert('OBSERVERS - Wait! Do you have any doubts about the movie? then... watch it again! :)');
 			this.set('reviewCountChanged', 0);
 		}
+	}else{
+			this.set('reviewCountChanged', 0);
 	}
 }.observes('model.review')	
 });
