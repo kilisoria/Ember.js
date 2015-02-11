@@ -17,7 +17,7 @@ Router.map(function() {
   });
 
   this.resource("events", function(){
-    this.route("event", {path:"view/:event_id"});
+    this.route("view", {path:"view/:event_id"});
   });
 
   this.route("tv");

@@ -3,7 +3,7 @@
 	<ul class="list-undstyled">
 		{{#each}}
 		<li>
-		{{code}}
+			<a {{action "events.view" this}}>{{code}}</a>
 		</li>
 		{{/each}}
 	</ul>
