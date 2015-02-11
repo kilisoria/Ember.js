@@ -12,19 +12,21 @@ textarea{
 }
 
 .main-container{
-	background: url('/assets/images/background.jpg');
+ 	background: url("/assets/images/background.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
 	width: auto;
 	height: 977px;
 	padding-top: 46px;
 }
 
 .section-container{
-	background-color: #818181;
-	color: #fff;
-	height: 862px;
-	margin: 0 auto;
-	opacity: 0.9;
-	width: 800px;
+  background-color: #818181;
+    color: #fff;
+    height: auto;
+    margin: 0 auto;
+    min-height: 800px;
+    opacity: 0.9;
+    padding-bottom: 10px;
+    width: 800px;
 }
 
 .logo{
@@ -187,7 +189,7 @@ textarea{
 	clear: both;
 	background-color: #FF6699;
 	color: #fff !important;		
-	min-height: 300px;
+	min-height: 600px;
 	font-size: 18px;
 	height: auto;
 	padding-bottom: 20px;
@@ -289,3 +291,15 @@ background: url('/assets/images/delete.png') no-repeat;
 	width: 144px !important;
 }
 
+.landing-container{
+ background: url("/assets/images/landing.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    cursor: pointer;
+    height: 229px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 608px;
+}

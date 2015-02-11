@@ -12,8 +12,8 @@ export default DS.Model.extend({
    capacity: DS.attr('number'),
    speakers: DS.hasMany('speaker'),
    comments: DS.attr('string'),
-   line: DS.belongsTo('business-line'),
-   type: DS.belongsTo('event-type'), 
+   businessLine: DS.belongsTo('business-line'),
+   eventType: DS.belongsTo('event-type'), 
    completeName: function(){
      return this.get('code')  + 'C' + ' - '  + this.get('name') + ' - '  + this.get('country');
    }.property('code', 'name', 'country'),

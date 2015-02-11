@@ -8,6 +8,9 @@ export default Ember.ArrayController.extend({
 	actions:{
 		seeAllActors:function(){
 			this.get('controllers.actors').send('showAllActors');
+		},
+		load: function(){
+			this.transitionToRoute('movies');
 		}
 	}
 });
