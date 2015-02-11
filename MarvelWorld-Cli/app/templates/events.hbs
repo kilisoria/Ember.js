@@ -1,0 +1,19 @@
+<div class="events-container">
+	<h3>{{upper-case "events"}} {{#link-to "events.new" class="btn btn-primary"}}Add new Event{{/link-to}}    
+	</h3>
+	
+	<ul class="list-undstyled">
+		{{#each}}
+		<li>
+		    {{#link-to "events.view" this}}{{upper-case completeName}}{{/link-to}}
+			<div class="event-actions-container">
+				<a {{action "remove" id}} class="event-remove-action" title="remove"></a>
+				{{#link-to "events.view" this class="event-view-action" title="see more detail"}}{{/link-to}}				
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+	<div>
+		{{outlet}}		
+	</div>	
+</div>

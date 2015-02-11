@@ -4,6 +4,11 @@ h2, h3{
 
 a{
 	color:#fff;
+	margin-left: 2px;
+}
+
+textarea{
+	resize:none;
 }
 
 .main-container{
@@ -184,10 +189,25 @@ a{
 	color: #fff !important;		
 	min-height: 300px;
 	font-size: 18px;
+	height: auto;
+	padding-bottom: 20px;
 }
+
 
 .events-container ul{
 	list-style-image: url('/assets/images/event-list-style.png')
+}
+
+.event-view-container{
+    background-color: #ffccff;
+    border: 1px solid #000;
+    border-radius: 25px;
+    color: #000;
+    font-size: 16px;
+    height: 236px;
+    margin: 10px auto;
+    padding: 20px;
+    width: 96%;  
 }
 
 .event-detail-container{
@@ -195,11 +215,56 @@ a{
     border: 1px solid #000;
     border-radius: 25px;
     color: #000;
-    font-size: 22px;
-    height: 200px;
+    font-size: 16px;
+    height: 436px;
     margin: 10px auto;
     padding: 20px;
     width: 96%;  
+}
+
+
+.event-detail-container label{
+	text-align: right;
+    width: 86px;    
+}
+
+.event-detail-top-label{
+  vertical-align: top;
+}
+
+
+.event-detail-medium-input{
+  width: 382px !important;
+}
+
+.event-detail-small-input{
+  width: 144px !important;
+}
+
+.event-actions-container{
+	float: right;
+}
+
+.event-actions-container a{
+	float: right;
+	cursor: pointer;
+}
+
+
+.event-view-action{
+background: url('/assets/images/edit.png') no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.event-remove-action{
+background: url('/assets/images/delete.png') no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.event-detail-container .form-group{
+	margin-bottom: 8px;
 }
 
 
@@ -219,3 +284,8 @@ a{
 .hide{
 	display: none;
 }
+
+.form-group select{
+	width: 144px !important;
+}
+
