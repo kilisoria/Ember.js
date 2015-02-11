@@ -22,13 +22,13 @@ if (!Array.prototype.find) {
 }
 
 var events = [
-{id:1, code: '00001', name:'e-0001', country: 'US'},
-{id:2,code: '00002', name:'e-0002', country: 'US'},
-{id:3,code: '00003', name:'e-0003', country: 'US'},
-{id:4,code: '00004', name:'e-0004', country: 'US'},
-{id:5,code: '00005', name:'e-0005', country: 'US'},
-{id:6,code: '00006', name:'e-0006', country: 'US'},
-{id:7,code: '00007', name:'e-0007', country: 'US'}
+{id:1, code: '00001', name:'The Marvel movies', country: 'US'},
+{id:2,code: '00002', name:"Stam lee's life", country: 'US'},
+{id:3,code: '00003', name:'Spiderman comes back to Marvel', country: 'US'},
+{id:4,code: '00004', name:'The favorite heroe', country: 'US'},
+{id:5,code: '00005', name:'Marvel vs DC', country: 'England'},
+{id:6,code: '00006', name:'Marvel 2015', country: 'US'},
+{id:7,code: '00007', name:'Marvel - Tokio', country: 'Japan'}
 ];
 
 module.exports = function(app) {

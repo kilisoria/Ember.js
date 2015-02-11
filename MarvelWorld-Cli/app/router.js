@@ -16,10 +16,10 @@ Router.map(function() {
     this.route("view", {path:"view/:game_id"});   
   });
 
-  this.resource("events", function(){
+ this.resource("events", function(){
     this.route("view", {path:"view/:event_id"});
   });
-
+  
   this.route("tv");
   this.route("event");
 });

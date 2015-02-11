@@ -182,6 +182,8 @@ a{
 	clear: both;
 	background-color: #FF6699;
 	color: #fff !important;		
+	min-height: 300px;
+	font-size: 18px;
 }
 
 .events-container ul{
@@ -194,11 +196,12 @@ a{
     border-radius: 25px;
     color: #000;
     font-size: 22px;
-    height: 400px;
+    height: 200px;
     margin: 10px auto;
     padding: 20px;
-    width: 96%;
+    width: 96%;  
 }
+
 
 /* Common */
 .coming-soon-container{
