@@ -13,6 +13,13 @@
 	<div>
 		<div class="movie-watches">(*) The movie with MAX watches has: <span>{{maxWatches}} viewers.</span></div>
 		<div class="movie-watches">(*) The movie with MIN watches has: <span>{{minWatches}} viewers.</span></div>
+		<div class="movie-watches">(*) Is there movie with awards? 
+			{{#if hasMovieAward}}
+			<span>YES</span>
+			{{else}}
+			<span>NO!</span>
+			{{/if}}
+		</div>
 		<!-- <a {{action "openModal" "modal" model}} class="actors-link">[SEE ALL ACTORS!]</a>		 -->
 	</div>	
 </div>

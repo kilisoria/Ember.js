@@ -9,6 +9,7 @@ export default DS.Model.extend({
 	picThumbnail: DS.attr('string'), 
 	favActorName: DS.attr('string'), 
 	watches: DS.attr('number'),
+	award: DS.attr('number'),
 	date: DS.attr('string', {
           defaultValue: function() { return new Date(); }
       }),
