@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
+    sortProperties: ['country'],
+    sortAscending: false,
 	actions:{
 		remove: function(id){
 			if(confirm('Are you sure want to remove this event?')){

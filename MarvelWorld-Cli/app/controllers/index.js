@@ -7,4 +7,4 @@ export default Ember.Controller.extend({
 			this.get('controllers.movies/index').send('load');
 		}
 	}
-})
+});

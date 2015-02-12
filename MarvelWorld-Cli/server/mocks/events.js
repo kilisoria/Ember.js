@@ -25,10 +25,10 @@ var events = [
 {id:1, code: '00001', name:'The Marvel movies', country: 'US', businessLine: 1},
 {id:2,code: '00002', name:"Stam lee's life", country: 'US'},
 {id:3,code: '00003', name:'Spiderman comes back to Marvel', country: 'US'},
-{id:4,code: '00004', name:'The favorite heroe', country: 'US'},
-{id:5,code: '00005', name:'Marvel vs DC', country: 'England'},
+{id:4,code: '00004', name:'The favorite heroe', country: 'ARG'},
+{id:5,code: '00005', name:'Marvel vs DC', country: 'ENG'},
 {id:6,code: '00006', name:'Marvel 2015', country: 'US'},
-{id:7,code: '00007', name:'Marvel - Tokio', country: 'Japan'}
+{id:7,code: '00007', name:'Marvel - Tokio', country: 'JAP'}
 ];
 
 var Bussineslines = [{id:1, name: "Movie"}];

@@ -197,7 +197,7 @@ textarea{
 
 
 .events-container ul{
-	list-style-image: url('/assets/images/event-list-style.png')
+	list-style: none;	
 }
 
 .event-view-container{
@@ -207,7 +207,7 @@ textarea{
     color: #000;
     font-size: 16px;
     height: 236px;
-    margin: 10px auto;
+     margin: 60px auto 0;
     padding: 20px;
     width: 96%;  
 }
@@ -219,7 +219,7 @@ textarea{
     color: #000;
     font-size: 16px;
     height: 436px;
-    margin: 10px auto;
+     margin: 60px auto 0;
     padding: 20px;
     width: 96%;  
 }
@@ -252,7 +252,6 @@ textarea{
 	cursor: pointer;
 }
 
-
 .event-view-action{
 background: url('/assets/images/edit.png') no-repeat;
 	width: 16px;
@@ -269,6 +268,28 @@ background: url('/assets/images/delete.png') no-repeat;
 	margin-bottom: 8px;
 }
 
+.event-title-component-container{
+	float:left;
+	color:#000;
+	clear: both;
+	margin-left: 6px;
+}
+
+.event-title-component-code{
+	font-size: 12px;
+}
+
+.event-title-component-name{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.event-add-link{
+	color: #fff;
+    float: right;
+    font-size: 14px;
+    margin: 6px;
+}
 
 /* Common */
 .coming-soon-container{

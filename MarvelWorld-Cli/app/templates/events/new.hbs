@@ -13,7 +13,7 @@
 	<div class="form-inline">
 		<div class="form-group">
 			<label for="code">Line</label>
-			{{view "select" class="form-control" value=line}}
+			{{view "select" class="form-control" content=lines optionValuePath="content.id" optionLabelPath="content.name" value=line}}
 		</div>
 		<div class="form-group">
 			<label for="code">Type</label>
@@ -61,7 +61,7 @@
 		</div>
 	</div>
 	<div class="pull-left">      		
-    	<a {{action "confirm"}} class="btn btn-primary">Confirm</a>
+    	<a {{action "confirm" this}} class="btn btn-primary">Confirm</a>
     	<a {{action "cancel"}} class="btn btn-default">Cancel</a>
 	</div>
 </div>	
