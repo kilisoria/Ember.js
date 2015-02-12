@@ -19,4 +19,4 @@ export default DS.Model.extend({
    }.property('code', 'name', 'country'),
    leftTime: function(){
    }.property('date')
-});
+});   

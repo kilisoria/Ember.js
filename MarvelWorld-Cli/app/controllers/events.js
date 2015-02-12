@@ -10,14 +10,10 @@ export default Ember.ArrayController.extend({
 					event.deleteRecord();
 					event.get('isDeleted');
 					event.save();
+
+					this.transitionToRoute('events');
 				});
 			}
-		},
-		confirm: function(){
-
-		},
-		cancel: function(){
-			Ember.transitionToRoute('events');
 		}
 	}
 });

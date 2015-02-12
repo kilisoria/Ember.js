@@ -23,6 +23,7 @@ Router.map(function() {
   
   this.route("tv");
   this.route("event");
+  this.route("training");
 });
 
 export default Router;

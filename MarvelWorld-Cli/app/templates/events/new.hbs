@@ -12,12 +12,12 @@
 	</div>
 	<div class="form-inline">
 		<div class="form-group">
-			<label for="code">Line</label>
-			{{view "select" class="form-control" content=lines optionValuePath="content.id" optionLabelPath="content.name" value=line}}
+			<label for="line">Line</label>
+			{{view "select" class="form-control" content=lines optionValuePath="content.id" optionLabelPath="content.name" selection=businessLineSelected value=businessLineSelected prompt="[Select]"}}
 		</div>
 		<div class="form-group">
-			<label for="code">Type</label>
-			{{view "select" class="form-control" value=type}}
+			<label for="type">Type</label>
+			{{view "select" class="form-control" content=types optionValuePath="content.id" optionLabelPath="content.type" value=type}}
 		</div>
 	</div>
 	<div class="form-inline">
@@ -26,27 +26,27 @@
 			{{input type="text" class="form-control event-detail-medium-input" value=address}}
 		</div>
 		<div class="form-group">
-			<label for="code">Country</label>
-			{{view "select" class="form-control" value=country}}
+			<label for="country">Country</label>
+			{{view "select" class="form-control" content=countries optionValuePath="content.id" optionLabelPath="content.name" value=country}}
 		</div>		
 	</div>
 	<div class="form-inline">
 		<div class="form-group">
-			<label for="name">Place</label>
+			<label for="place">Place</label>
 			{{input type="text" class="form-control event-detail-medium-input" value=place}}
 		</div>
 		<div class="form-group">
-			<label for="code">Price</label>
+			<label for="price">Price</label>
 			{{input type="text" class="form-control event-detail-small-input" value=price}}
 		</div>
 	</div>
 	<div class="form-inline">	
 		<div class="form-group">
-			<label for="name">Date</label>
+			<label for="date">Date</label>
 			{{input type="text" class="form-control event-detail-small-input" value=date}}
 		</div>
 		<div class="form-group">
-			<label for="name">Capacity</label>
+			<label for="capacity">Capacity</label>
 			{{input type="text" class="form-control event-detail-small-input" value=capacity}}
 		</div>
 		<div class="form-group">
@@ -56,8 +56,8 @@
 	</div>
 	<div class="form-inline">
 		<div class="form-group">
-			<label for="code" class="event-detail-top-label">Comments</label>
-			{{textarea value=comment cols="80" rows="3"}}
+			<label for="comments" class="event-detail-top-label">Comments</label>
+			{{textarea value=comments cols="80" rows="3"}}
 		</div>
 	</div>
 	<div class="pull-left">      		
