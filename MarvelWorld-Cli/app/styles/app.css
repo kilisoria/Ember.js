@@ -385,3 +385,7 @@ background: url('/assets/images/delete.png') no-repeat;
     font-weight: bold;
 }
 
+.app-version{
+	font-size: 12px;
+	margin: 6px;
+}

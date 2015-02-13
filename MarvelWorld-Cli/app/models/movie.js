@@ -1,7 +1,8 @@
 import DS from 'ember-data';
 import Em from 'ember';
+import Base from '../mixins/base';
 
-export default DS.Model.extend({
+export default DS.Model.extend(Base, {
 	title: DS.attr('string'),
 	brief: DS.attr('string'),
 	review: DS.attr('number'),

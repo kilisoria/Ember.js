@@ -1,6 +1,7 @@
 import Ember from 'ember';
+import Base from '../../mixins/base';
 
-export default Ember.ArrayController.extend({
+export default Ember.ArrayController.extend(Base, {
 	needs:['actors'],
 	sortProperties: ['title'],
     sortAscending: true,
