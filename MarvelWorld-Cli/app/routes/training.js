@@ -4,6 +4,10 @@ export default Ember.Route.extend({
 	capacitation:[
 		{key: "Actions", file: "controllers > events > new", line: 32 },	    
 	    {key: "Actions", file: "controllers > movies > index", line: 32 },	    
+
+
+		{key: "Addon - Ember-cli-table", file: "templates > comics", line: 1 },	    
+
 	    {key: "Components hsb", file: "components > event-title", line: 1 },	    
 	    {key: "Components hsb", file: "components > training-data", line: 1 },
 	    {key: "Components js", file: "templates > components > event-title", line: 1 },	    

@@ -6,7 +6,7 @@ export default Ember.ArrayController.extend({
     sortAscending: true,
 	watches: Ember.computed.mapBy('model', 'watches'),
 	maxWatches: Ember.computed.max('watches'),
-	minWatches: Ember.computed.min('watches'),
+	minWatches: Ember.computed.min('watches'),	
 	hasMovieAward: Ember.computed.filter('model', function(movie){
 		if(movie._data.award !== 0){
 			return true;

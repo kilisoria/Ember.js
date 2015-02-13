@@ -13,6 +13,9 @@ export default DS.Model.extend({
 	date: DS.attr('date'),
 	profile: DS.belongsTo('profile'),
 	hasGoodRating: Em.computed.gt('review', 9),	
+	year: DS.attr('number'),
+	currentYear: Em.computed.equal('year', 2015),
+	nextYear: Em.computed.gt('year', 2015),	
 	code: function(){
 		return '000001A#000' + this.get('id');
 	}.property('id')

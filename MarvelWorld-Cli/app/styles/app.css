@@ -157,6 +157,16 @@ textarea{
 	bottom: 16px;
 }
 
+.movie-premiere{
+	color:#E62E00;
+	font-size: 12px;
+}
+
+.movie-coming-soon{
+  color: #001F33;
+  font-size: 12px;
+}
+
 /* Games */
 .game-container{
 	clear: both;
@@ -185,7 +195,13 @@ textarea{
 .comics-container{
 	clear: both;
 	background-color: #FF3300;
-	color: #fff !important;
+	color: #000 !important;
+	padding-bottom: 14px;
+}
+
+.comics-table-container{
+	background-color:#fff;
+	margin:20px;
 }
 
 /* TV */

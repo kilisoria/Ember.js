@@ -7,6 +7,15 @@
 			{{#link-to 'movies.view' this}}			
 			{{upper-case title}}
 			{{/link-to}}
+			
+			{{#if currentYear}}			
+				<span class="movie-premiere">Premiere</span>
+			{{/if}}
+
+			{{#if nextYear}}			
+				<span class="movie-coming-soon">Coming soon</span>
+			{{/if}}
+			
 		</li>
 		{{/each}}
 	</ul>

@@ -32,7 +32,7 @@ var comics = [{id: 1, name:"All-New Ghost Rider #11"},
 {id: 7, name:"Guardians of the Galaxy #24"},  
 {id: 8, name:"Guardians 3000 #5"},    
 {id: 9, name:"Amazing Spider-Man #14"},   
-{id: 10, name:"Captain Marvel #12"}]    
+{id: 10, name:"Captain Marvel #12"}];    
 
 
 module.exports = function(app) {
@@ -51,7 +51,7 @@ module.exports = function(app) {
 
   comicsRouter.get('/:id', function(req, res) {
     res.send({
-      'comics': events.find(function(comic){
+      'comics': comics.find(function(comic){
         return comic.id == req.params.id
       })
     });
