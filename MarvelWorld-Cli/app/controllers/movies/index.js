@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
 	needs:['actors'],
+	sortProperties: ['title'],
+    sortAscending: true,
 	watches: Ember.computed.mapBy('model', 'watches'),
 	maxWatches: Ember.computed.max('watches'),
 	minWatches: Ember.computed.min('watches'),
@@ -11,6 +13,7 @@ export default Ember.ArrayController.extend({
 		}
 		return false;
 	}),
+	/*favorites: Ember.computed.collect('model.favActorName'),*/
 	actions:{
 		seeAllActors:function(){
 			this.get('controllers.actors').send('showAllActors');

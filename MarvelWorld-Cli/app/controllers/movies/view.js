@@ -9,6 +9,12 @@ export default Ember.Controller.extend({
 			return actor;
 		}
 	}),
+	hasAward: Ember.computed.gt('model.award', 0),
+	/*hasAward: Ember.computed.gte('model.award', 1),*/
+	/*hasNotAward: Ember.computed.lte('model.award', 1),*/
+	actorNames: Ember.computed.map('model.actors', function(actor){
+		return actor._data.name.split(' ')[0] + ' ';
+	}),
 	checkReviewChanged: function(e){
 	if(e.target.router.activeTransition === null){
 	console.log('Observers');			

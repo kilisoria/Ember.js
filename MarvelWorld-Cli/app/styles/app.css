@@ -52,6 +52,7 @@ textarea{
 	padding-bottom: 12px;
 	margin-bottom: 12px;
 	min-height: 600px;
+	position: relative;
 }
 
 .movie-container ul{
@@ -123,6 +124,10 @@ textarea{
   margin: 4px 0px;
 }
 
+.movie-code{
+	font-size: 12px;
+}
+
 .movie-title{
 	font-size: 24px;
 	font-family: cursive;
@@ -131,10 +136,11 @@ textarea{
 }
 
 .movie-rating-excellent{
-	background: url('/assets/images/gold-star.jpg');
-	width: 80px;
-	height: 80px;
-	float: right;
+	 background: url("/assets/images/gold-star.jpg") repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+    float: right;
+    height: 40px;
+    top: 0;
+    width: 40px;
 }
 
 .movie-watches{
@@ -144,6 +150,11 @@ textarea{
 
 .movie-watches span{
 	font-size: 16px;	
+}
+
+.movie-summary{
+	position: absolute;
+	bottom: 16px;
 }
 
 /* Games */
@@ -217,7 +228,7 @@ textarea{
     border: 1px solid #000;
     border-radius: 25px;
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     height: 436px;
      margin: 60px auto 0;
     padding: 20px;
@@ -351,3 +362,10 @@ background: url('/assets/images/delete.png') no-repeat;
 	font-weight: bold;
 	font-size: 11px;
 }
+
+.current-date{
+	float: left;
+    margin-left: 12px;
+    font-weight: bold;
+}
+

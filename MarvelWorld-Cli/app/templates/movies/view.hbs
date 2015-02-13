@@ -1,16 +1,26 @@
 {{partial "layouts/main"}}
 <div class="movie-container">
-	<img  {{bind-attr src=model.picThumbnail}}>
-	<span>CODE:</span>{{model.code}} - <span class="movie-title">{{upper-case model.title}}</span>
-	<div {{bind-attr class="model.hasGoodRating:movie-rating-excellent"}}  ></div>
-	<hr>
-	<div class="movie-item-small">{{model.date}}</div>
+	{{movie-title model=model}}
+	<hr>	
+
 	{{#if model.profile}}
-	<div class="movie-item-small">PROFILE: {{upper-case model.profile.name}}</div>
+	<div class="movie-item-small">Profile: {{upper-case model.profile.name}}</div>
 	{{/if}}
+    <div class="movie-item-small">Award:
+		{{#if hasAward}}
+		  <span>YES</span>
+		{{else}}
+		  <span>NO!</span>
+		{{/if}}
+    </div>
 	<div class="movie-brief">
 		{{model.brief}}
 	</div>
+
+	{{#if actorNames}}
+	<div class="movie-item-small">Actor Names: {{actorNames}}</div>
+	{{/if}}
+
 	<div class="movie-actors-container">	
 		{{#each actor in model.actors}}
 		<div class="movie-actor">{{actor.name}}</div>

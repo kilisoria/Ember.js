@@ -10,13 +10,9 @@ export default DS.Model.extend({
 	favActorName: DS.attr('string'), 
 	watches: DS.attr('number'),
 	award: DS.attr('number'),
-	date: DS.attr('string', {
-          defaultValue: function() { return new Date(); }
-      }),
+	date: DS.attr('date'),
 	profile: DS.belongsTo('profile'),
-	// Ember Computed properties.
 	hasGoodRating: Em.computed.gt('review', 9),	
-	// Custom Cmputed property.
 	code: function(){
 		return '000001A#000' + this.get('id');
 	}.property('id')

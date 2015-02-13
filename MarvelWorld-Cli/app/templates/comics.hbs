@@ -1,5 +1,15 @@
 {{partial "layouts/main"}}
 <div class="comics-container">
-	{{partial "comingsoon"}}
+<h3>{{upper-case "comics"}}</h3> 
+
+<div style="background-color:#000;">	
+{{#ns-table content=content class='table table-striped'}}
+    {{ns-table-col valuePath='id' title="ID"}}
+    {{ns-table-col valuePath='name' title="Name"}}    
+{{/ns-table}}
+</div>
+
+
+
 </div>
 
