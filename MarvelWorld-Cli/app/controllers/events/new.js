@@ -1,47 +1,27 @@
-if (!Array.prototype.find) {
-  Array.prototype.find = function(predicate) {
-    if (this == null) {
-      throw new TypeError('Array.prototype.find called on null or undefined');
-    }
-    if (typeof predicate !== 'function') {
-      throw new TypeError('predicate must be a function');
-    }
-    var list = Object(this);
-    var length = list.length >>> 0;
-    var thisArg = arguments[1];
-    var value;
-
-    for (var i = 0; i < length; i++) {
-      value = list[i];
-      if (predicate.call(thisArg, value, i, list)) {
-        return value;
-      }
-    }
-    return undefined;
-  };
-}
-
 import Ember from 'ember';
-/*import utilities from '../utilities';*/
+import Utilities from '../utilities';
 
-export default Ember.Controller.extend({
+export default Ember.ObjectController.extend({
+	init:function(){
+		console.log("000000000000001");
+		console.log(Utilities.code);
+	},
 	lines: [{id: 1, name:'Movies'}, {id:2, name:'Series'},{id:3 , name:'Comics'}],
-	types: [{id: -1, type:'[select]'}, {id: 1, type:'Free'}, {id:2, type:'Payment'}, {id:3, type:'Donate'}],
-	countries: [{id: -1, name:'[select]'}, {id:"US", name:"United States"}, {id: "ENG", name: "England"}, {id:"JAP", name:"Japan"}],
-	businessLineSelected: {id: -1, name: ''},
+	types: [{id: 1, type:'Free'}, {id:2, type:'Payment'}, {id:3, type:'Donate'}],
+	countries: [{id:"US", name:"United States"}, {id: "ENG", name: "England"}, {id:"JAP", name:"Japan"}],
 	clear:function(){
 		 this.set('code','');
 		 this.set('name', '');
-		 this.set('country', '');
+		 //this.set('country', '');
 		 this.set('address', '');
 		 this.set('place', '');
 		 this.set('price', '');
 		 this.set('available', false);
 		 this.set('capacity', '');
 		 this.set('comments', '');
+		 this.set('date', '');
 		//businessLine:
-		//date
-		//speakers	
+		//speakers:	
 		//eventType: this.get('type')
 	},
 	actions:{
@@ -57,7 +37,7 @@ export default Ember.Controller.extend({
 					place: this.get('place'),
 					price: this.get('price'),
 					//businessLine: this.get('businessLineSelected'),
-					//date
+					date: this.get('date'),
 					available: this.get('available'),
 					capacity: this.get('capacity'),
 					//speakers	
@@ -75,5 +55,5 @@ export default Ember.Controller.extend({
 			console.log(this.get('line'));	
 			console.log(this.get('businessLineSelected'));
 		}
-	}
+	}	
 });

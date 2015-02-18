@@ -9,10 +9,10 @@ export default Ember.ArrayController.extend({
 				this.store.find('event',id).then(function(event){
 					event.deleteRecord();
 					event.get('isDeleted');
-					event.save();
-
-					this.transitionToRoute('events');
+					event.save();					
 				});
+
+				this.transitionToRoute('events');
 			}
 		}
 	}

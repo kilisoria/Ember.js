@@ -228,7 +228,7 @@ textarea{
 }
 
 .event-view-container{
-    background-color: #ffccff;
+    background-color: #ffd4e2;
     border: 1px solid #000;
     border-radius: 25px;
     color: #000;
@@ -240,7 +240,7 @@ textarea{
 }
 
 .event-detail-container{
-    background-color: #ffccff;
+    background-color: #ffd4e2;
     border: 1px solid #000;
     border-radius: 25px;
     color: #000;
@@ -379,6 +379,16 @@ background: url('/assets/images/delete.png') no-repeat;
 	font-size: 11px;
 }
 
+.training-title{
+	margin: 20px;
+}
+
+.training-content{
+	height: 636px;
+	overflow-y: scroll;
+	margin-bottom: 12px;
+}
+
 .current-date{
 	float: left;
     margin-left: 12px;
@@ -386,6 +396,24 @@ background: url('/assets/images/delete.png') no-repeat;
 }
 
 .app-version{
-font-size: 14px;
-    margin: 0 6px;
+	background-color: #fff;
+    color: #FF4D4D;
+    font-size: 12px;
+    margin: 0 auto;
+    width: 42%;
+}
+
+.app-version a{
+	color: #000;
+	cursor: pointer;
+}
+
+.app-version a:nth-child(3){
+	float: right;
+}
+
+.index-container{
+	width: auto;
+	height: 334px;
+	padding-top: 46px;
 }

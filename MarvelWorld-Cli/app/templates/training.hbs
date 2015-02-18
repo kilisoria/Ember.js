@@ -1,9 +1,11 @@
-<div>
+<div class="training-title">
 	<h3>{{upper-case "references"}} - Here you could find some references to the capacities learnt and implemented:</h3>
 </div>
+<div class="training-content">
 {{#each}}
 {{training-data model=this}}
 {{/each}}
+</div>
 <div>
 {{#link-to "index" class="btn btn-primary"}}Ok{{/link-to}}	
 </div>

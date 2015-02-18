@@ -39,6 +39,9 @@ export default Ember.Route.extend({
 
 		{key: "Models - Complex - hasMany/ belongsTo", file: "models > event", line: 1 },		
 		{key: "Models - Complex - hasMany/ belongsTo", file: "models > movie", line: 1 },		
+
+		{key: "Mixin", file: "mixins > base", line: 1 },		
+
 	],
 	model:function(){
   		return this.get('capacitation');
