@@ -1,11 +1,7 @@
 import Ember from 'ember';
-import Utilities from '../utilities';
+import RandomNumber from '../../utils/random-number';
 
 export default Ember.ObjectController.extend({
-	init:function(){
-		console.log("000000000000001");
-		console.log(Utilities.code);
-	},
 	lines: [{id: 1, name:'Movies'}, {id:2, name:'Series'},{id:3 , name:'Comics'}],
 	types: [{id: 1, type:'Free'}, {id:2, type:'Payment'}, {id:3, type:'Donate'}],
 	countries: [{id:"US", name:"United States"}, {id: "ENG", name: "England"}, {id:"JAP", name:"Japan"}],
@@ -29,7 +25,7 @@ export default Ember.ObjectController.extend({
 			console.log(this.get('code'));		
 			this.store.createRecord('event',
 				{
-					id: 99999,//utilities.getRandomNumber(),
+					id:new RandomNumber(),
 					code: this.get('code'),
 					name: this.get('name'),
 					country: this.get('country'),
@@ -54,6 +50,12 @@ export default Ember.ObjectController.extend({
 		businessLineChange: function(){
 			console.log(this.get('line'));	
 			console.log(this.get('businessLineSelected'));
+		}
+	},
+	validations:{
+		'model.code':{
+			presence: true,
+			length: 2
 		}
 	}	
 });
