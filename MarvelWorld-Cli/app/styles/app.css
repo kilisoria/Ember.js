@@ -386,6 +386,6 @@ background: url('/assets/images/delete.png') no-repeat;
 }
 
 .app-version{
-	font-size: 12px;
-	margin: 6px;
+font-size: 14px;
+    margin: 0 6px;
 }

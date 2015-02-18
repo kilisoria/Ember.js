@@ -1,5 +1,10 @@
 <div class="main-container">
 	<div class="section-container">		
 		{{outlet}}
+		<div class="app-version">
+			<span>App Version:{{version}}</span>
+			<span>Features used</span>
+			<a {{action "goToGithub"}}>@kilisoria</a>
+		</div>
 	</div>
 </div>
