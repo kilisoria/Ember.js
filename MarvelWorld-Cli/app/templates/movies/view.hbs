@@ -1,6 +1,7 @@
 {{partial "layouts/main"}}
 <div class="movie-container">
 	{{movie-title model=model}}
+	<div {{bind-attr class="hasGoodRating:movie-rating-excellent"}}></div>
 	<hr>	
 
 	{{#if model.profile}}

@@ -5,10 +5,11 @@ export default Ember.ObjectController.extend({
 	lines: [{id: 1, name:'Movies'}, {id:2, name:'Series'},{id:3 , name:'Comics'}],
 	types: [{id: 1, type:'Free'}, {id:2, type:'Payment'}, {id:3, type:'Donate'}],
 	countries: [{id:"US", name:"United States"}, {id: "ENG", name: "England"}, {id:"JAP", name:"Japan"}],
+	businessLineSelected:{},
 	clear:function(){
 		 this.set('code','');
 		 this.set('name', '');
-		 //this.set('country', '');
+		 this.set('country', '');
 		 this.set('address', '');
 		 this.set('place', '');
 		 this.set('price', '');
@@ -16,33 +17,30 @@ export default Ember.ObjectController.extend({
 		 this.set('capacity', '');
 		 this.set('comments', '');
 		 this.set('date', '');
-		//businessLine:
-		//speakers:	
-		//eventType: this.get('type')
+		 //businessLine:
+		 //speakers:	
+		 //eventType: this.get('type')
 	},
 	actions:{
-		confirm: function(){
-			console.log(this.get('code'));		
-			this.store.createRecord('event',
-				{
-					id:new RandomNumber(),
-					code: this.get('code'),
-					name: this.get('name'),
-					country: this.get('country'),
-					address: this.get('address'),
-					place: this.get('place'),
-					price: this.get('price'),
-					//businessLine: this.get('businessLineSelected'),
-					date: this.get('date'),
-					available: this.get('available'),
-					capacity: this.get('capacity'),
+		confirm: function(){			
+			this.store.createRecord('event',{
+					code: this.get('model.code'),
+					name: this.get('model.name'),
+					country: this.get('model.country'),
+					address: this.get('model.address'),
+					place: this.get('model.place'),
+					price: this.get('model.price'),
+					businessLine: this.get('model.businessLine'),
+					date: this.get('model.date'),
+					available: this.get('model.available'),
+					capacity: this.get('model.capacity'),
 					//speakers	
-					comments: this.get('comments'),
-					//eventType: this.get('type'),					
+					comments: this.get('model.comments'),
+					//eventType: this.get('type')					
 				});
-
+			
 			this.clear();
-			this.transitionToRoute('events');	    
+			this.transitionToRoute('events');	
 		},
 		cancel: function(){
 			 this.transitionToRoute('events');

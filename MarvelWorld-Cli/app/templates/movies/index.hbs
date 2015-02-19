@@ -6,16 +6,8 @@
 		<li>
 			{{#link-to 'movies.view' this}}			
 			{{upper-case title}}
-			{{/link-to}}
-			
-			{{#if currentYear}}			
-				<span class="movie-premiere">Premiere</span>
-			{{/if}}
-
-			{{#if nextYear}}			
-				<span class="movie-coming-soon">Coming soon</span>
-			{{/if}}
-			
+			{{/link-to}}						
+			<span {{bind-attr class=movieState}}>{{capitalize-first-letter movieState}}</span>						  
 		</li>
 		{{/each}}
 	</ul>
@@ -30,6 +22,5 @@
 			<span>NO!</span>
 			{{/if}}
 		</div>				
-		<!-- <a {{action "openModal" "modal" model}} class="actors-link">[SEE ALL ACTORS!]</a>		 -->
 	</div>	
 </div>

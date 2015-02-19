@@ -1,4 +1,4 @@
-<div class="event-detail-container">
+<form  {{action "confirm" on="submit"}} class="event-detail-container">
 	<h4>{{upper-case "new - event"}}</h4>
 	<div class="form-inline">
 		<div class="form-group">
@@ -61,7 +61,7 @@
 		</div>
 	</div>
 	<div class="pull-left">      		
-    	<a {{action "confirm" this}} class="btn btn-primary">Confirm</a>
-    	<a {{action "cancel"}} class="btn btn-default">Cancel</a>
+		<input type="submit" class="btn btn-primary" value="Confirm" />
+    	<button {{action "cancel"}} class="btn btn-default">Cancel</button>
 	</div>
-</div>	
+</form>	

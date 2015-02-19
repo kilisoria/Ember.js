@@ -7,13 +7,23 @@ export default Ember.ArrayController.extend({
 	watches: Ember.computed.mapBy('model', 'watches'),
 	maxWatches: Ember.computed.max('watches'),
 	minWatches: Ember.computed.min('watches'),	
-	hasMovieAward: Ember.computed.filter('model', function(movie){
-		if(movie._data.award !== 0){
-			return true;
-		}
-		return false;
-	}),
-	/*favorites: Ember.computed.collect('model.favActorName'),*/
+	hasMovieAward: Ember.computed.any('model', 'award'),
+/*	movieState: function(){
+    console.log("0001");
+    var year = this.get('year');
+    var currentYear = parseInt(moment().format("YYYY"));
+
+	    if(year === currentYear){
+	    	this.set('movieStateClass', 'movie-premiere');
+			return "Premiere";			
+	    }else if(year > currentYear){
+	    	this.set('movieStateClass', 'movie-coming-soon');
+	    	return "Coming Soon";
+	    }else{
+	    	this.set('movieStateClass', 'movie-released');
+			return	"Released";
+	    }
+	}.property('year'),*/
 	actions:{
 		seeAllActors:function(){
 			this.get('controllers.actors').send('showAllActors');

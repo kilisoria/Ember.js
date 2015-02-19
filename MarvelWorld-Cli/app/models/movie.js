@@ -1,8 +1,6 @@
 import DS from 'ember-data';
-import Em from 'ember';
-import Base from '../mixins/base';
 
-export default DS.Model.extend(Base, {
+export default DS.Model.extend({
 	title: DS.attr('string'),
 	brief: DS.attr('string'),
 	review: DS.attr('number'),
@@ -12,11 +10,19 @@ export default DS.Model.extend(Base, {
 	watches: DS.attr('number'),
 	award: DS.attr('number'),
 	date: DS.attr('date'),
-	profile: DS.belongsTo('profile'),
-	hasGoodRating: Em.computed.gt('review', 9),	
+	profile: DS.belongsTo('profile'),	
 	year: DS.attr('number'),
-	currentYear: Em.computed.equal('year', 2015),
-	nextYear: Em.computed.gt('year', 2015),	
+	movieState: function(){    
+    var year = this.get('year');
+    var currentYear = parseInt(moment().format("YYYY"));
+	    if(year === currentYear){
+			return "premiere";			
+	    }else if(year > currentYear){
+	    	return "comingSoon";
+	    }else{
+			return	"released";
+	    }
+	}.property('year'),
 	code: function(){
 		return '000001A#000' + this.get('id');
 	}.property('id')

@@ -136,9 +136,10 @@ textarea{
 }
 
 .movie-rating-excellent{
-	 background: url("/assets/images/gold-star.jpg") repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+    background: url("/assets/images/gold-star.jpg") repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
     float: right;
     height: 40px;
+    position: absolute;
     top: 0;
     width: 40px;
 }
@@ -157,13 +158,18 @@ textarea{
 	bottom: 16px;
 }
 
-.movie-premiere{
+.premiere{
 	color:#E62E00;
 	font-size: 12px;
 }
 
-.movie-coming-soon{
-  color: #001F33;
+.comingSoon{
+  color: #FFFF66;
+  font-size: 12px;
+}
+
+.released{
+  color: #000;
   font-size: 12px;
 }
 

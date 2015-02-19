@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 	scores:[1,2,3,4,5,6,7,8,9, 10],	
 	favActorName: Ember.computed.alias('model.favActorName'),
 	favActor: Ember.computed.filter('model.actors', function(actor){
-		if(actor._data.name === this.get('favActorName')){
+		if(actor.get('name') === this.get('favActorName')){
 			return actor;
 		}
 	}),
@@ -13,8 +13,9 @@ export default Ember.Controller.extend({
 	/*hasAward: Ember.computed.gte('model.award', 1),*/
 	/*hasNotAward: Ember.computed.lte('model.award', 1),*/
 	actorNames: Ember.computed.map('model.actors', function(actor){
-		return actor._data.name.split(' ')[0] + ' ';
+		return actor.get('name').split(' ')[0] + ' ';
 	}),
+	hasGoodRating: Ember.computed.gt('model.review', 9),	
 	checkReviewChanged: function(e){
 	if(e.target.router.activeTransition === null){
 	console.log('Observers');			
