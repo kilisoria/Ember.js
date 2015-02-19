@@ -21,6 +21,8 @@ app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 app.import('bower_components/bootstrap/dist/css/bootstrap.css.map');
 app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
 app.import('bower_components/moment/moment.js');
+app.import('bower_components/cldr/plurals.js');
+app.import('bower_components/ember-i18n/lib/i18n.js');
 
 
 module.exports = app.toTree();
