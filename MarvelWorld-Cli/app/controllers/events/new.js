@@ -30,7 +30,7 @@ export default Ember.ObjectController.extend({
 					address: this.get('model.address'),
 					place: this.get('model.place'),
 					price: this.get('model.price'),
-					businessLine: this.get('model.businessLine'),
+					//businessLine: this.get('model.businessLine'),
 					date: this.get('model.date'),
 					available: this.get('model.available'),
 					capacity: this.get('model.capacity'),
