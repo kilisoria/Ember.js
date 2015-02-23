@@ -16,7 +16,10 @@ export default Ember.Route.extend({
 		{key: "Computed Property", file: "models > event", line: 17 },	    
 
 	    {key: "Helpers", file: "helpers > upper-case", line: 1 },	    		
+	    {key: "Helpers", file: "helpers > upper-case-i18n", line: 1 },	    		
 	    {key: "Helpers", file: "helpers > current-date", line: 1 },	    		
+
+	    {key: "i18n", file: "templates > movies > index", line: 1 },
 		
 		{key: "Observers", file: "controllers >  movies > view", line: 12 },
 

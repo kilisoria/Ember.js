@@ -19,11 +19,12 @@ export default Ember.ObjectController.extend({
 		 this.set('date', '');
 		 //businessLine:
 		 //speakers:	
-		 //eventType: this.get('type')
+		 //eventType: this.get('type')		 
 	},
 	actions:{
 		confirm: function(){			
 			this.store.createRecord('event',{
+					id: RandomNumber(),
 					code: this.get('model.code'),
 					name: this.get('model.name'),
 					country: this.get('model.country'),
@@ -39,7 +40,7 @@ export default Ember.ObjectController.extend({
 					//eventType: this.get('type')					
 				});
 			
-			this.clear();
+			//this.clear();
 			this.transitionToRoute('events');	
 		},
 		cancel: function(){

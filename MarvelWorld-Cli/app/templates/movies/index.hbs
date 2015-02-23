@@ -1,6 +1,6 @@
 {{partial "layouts/main"}}
 <div class="movie-container">
-	<h3>{{upper-case "Movies"}}</h3>
+	<h3>{{upper-case-i18n "movies"}}</h3>
 	<ul class="list-undstyled">
 		{{#each}}
 		<li>
@@ -12,16 +12,15 @@
 		{{/each}}
 	</ul>
 	<div class="movie-summary">
-		<h5>{{upper-case "summary"}}</h5>
-		<div class="movie-watches">(*) The movie with MAX watches has: <span>{{maxWatches}} viewers.</span></div>
-		<div class="movie-watches">(*) The movie with MIN watches has: <span>{{minWatches}} viewers.</span></div>
-		<div class="movie-watches">(*) Is there movie with awards? 
+		<h5>{{upper-case-i18n "movie.summary"}}</h5>
+		<div class="movie-watches">{{t "movie.max.watches"}} <span>{{maxWatches}} {{t "viewers"}}</span></div>
+		<div class="movie-watches">{{t "movie.min.watches"}}<span>{{minWatches}} {{t "viewers"}}</span></div>
+		<div class="movie-watches">{{t "movie.award"}}
 			{{#if hasMovieAward}}
-			<span>YES</span>
+			<span>{{t "es.yes"}}</span>
 			{{else}}
-			<span>NO!</span>
+			<span>{{t "no.exclamation"}}</span>
 			{{/if}}
 		</div>				
 	</div>
-	{{t button.add_user.text}}	
 </div>
