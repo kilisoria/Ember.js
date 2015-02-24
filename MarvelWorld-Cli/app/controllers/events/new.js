@@ -35,12 +35,11 @@ export default Ember.ObjectController.extend({
 					date: this.get('model.date'),
 					available: this.get('model.available'),
 					capacity: this.get('model.capacity'),
-					//speakers	
 					comments: this.get('model.comments'),
 					//eventType: this.get('type')					
 				});
 			
-			//this.clear();
+			this.clear();
 			this.transitionToRoute('events');	
 		},
 		cancel: function(){
