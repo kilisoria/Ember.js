@@ -1,4 +1,4 @@
-import Ember from 'ember';
+/*import Ember from 'ember';
 import { initialize } from 'marvel-world-cli/initializers/i18n';
 
 var container, application;
@@ -11,13 +11,6 @@ module('I18nInitializer', {
       application.deferReadiness();
     });
   }
-});
+});*/
 
-// Replace this with your real tests.
-test('it works', function() {
-  initialize(container, application);
-
-  // you would normally confirm the results of the initializer here
-  ok(true);
-});
 

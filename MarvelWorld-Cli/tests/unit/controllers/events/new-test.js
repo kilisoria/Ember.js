@@ -3,12 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleFor('route:game', 'GameRoute', {
+moduleFor('controller:events/new', 'Events/NewController', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
-});
-
-test('it exists', function() {
-  var route = this.subject();
-  ok(route);
 });

@@ -3,7 +3,7 @@
 	<div class="form-inline">
 		<div class="form-group">
 			<label for="code">Code</label>
-			{{input type="text" class="form-control event-detail-small-input" value=model.code maxlength=6 placeholder="999999" required="true"}}
+			{{input type="text" class="form-control event-detail-small-input" value=model.code maxlength=6 placeholder="999999"}}
 		</div>
 		<div class="form-group">
 			<label for="name">Name</label>
@@ -43,7 +43,7 @@
 	<div class="form-inline">	
 		<div class="form-group">
 			<label for="date">Date</label>				
-			{{bootstrap-datepicker autoclose=true placeholder="Enter a date" value=model.date  class="form-control"}}			
+			{{bootstrap-datepicker autoclose=true placeholder="Enter a date" value=model.date startDate=startDate class="form-control"}}			
 		</div>
 		<div class="form-group">
 			<label for="capacity">Capacity</label>
