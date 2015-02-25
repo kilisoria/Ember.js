@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.ArrayController.extend({
-	needs:['actors'],
 	sortProperties: ['title'],
     sortAscending: true,
 	watches: Ember.computed.mapBy('model', 'watches'),
