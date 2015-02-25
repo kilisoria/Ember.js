@@ -423,3 +423,42 @@ background: url('/assets/images/delete.png') no-repeat;
 	height: 334px;
 	padding-top: 46px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.modal {
+    background-color: #717181;
+    border: 1px solid #000;
+    display: inherit;
+    height: 200px;
+    margin: 160px auto;
+    padding: 1em;
+    position: relative;
+    text-align: left;
+    width: 600px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flush--top {
+  margin-top: 0;  
+}
+
+.info-modal-message{
+	clear: both;
+	font-size: 16px;
+}
+
+.info-modal-button-container{
+	bottom: 8px;
+	position: absolute;
+}
