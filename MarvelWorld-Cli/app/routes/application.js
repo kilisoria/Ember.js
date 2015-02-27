@@ -14,6 +14,17 @@ export default Ember.Route.extend({
 	        outlet: 'modal',
 	        parentView: 'application'
 	      });
-	    }
+	    },
+	 	setSpainLanguage: function(){
+			console.log("0001");
+		},
+		setEnglishLanguage: function(){
+
+			/*var set = Ember.set;			
+			var application = container.lookup('application:main');
+			set(application, 'locale', 'en');*/
+
+
+		}
   	}	
 });

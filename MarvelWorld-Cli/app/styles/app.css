@@ -462,3 +462,26 @@ background: url('/assets/images/delete.png') no-repeat;
 	bottom: 8px;
 	position: absolute;
 }
+
+.languages-container{
+    float: left;
+    margin-left: 6px;
+    margin-top: 2px;
+}
+
+.spain-language{	
+	background: url("/assets/images/spain-flag.png") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+	float: left;
+	width: 16px;
+	height: 16px;	
+	cursor: pointer;
+}
+
+.english-language{
+	background: url("/assets/images/us-flag.png") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+ 	float: left;
+    height: 16px;
+    margin-left: 4px;
+    width: 16px;
+    cursor: pointer;
+}

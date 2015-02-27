@@ -6,7 +6,11 @@
 		{{#link-to "tv" class="btn btn-primary btn-lg"}}TV{{/link-to}}
 		{{#link-to "events" class="btn btn-primary btn-lg"}}Events{{/link-to}}			
 	<div class="current-date">
-		{{current-date}}	
+		{{current-date}}			
+	</div>
+	<div class="languages-container">
+		<div class="spain-language" {{action "setSpainLanguage"}}></div>
+		<div class="english-language" {{action "setEnglishLanguage"}}></div>
 	</div>
 </div>
 
