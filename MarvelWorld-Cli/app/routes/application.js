@@ -20,9 +20,9 @@ export default Ember.Route.extend({
 		},
 		setEnglishLanguage: function(){
 
-			/*var set = Ember.set;			
+			var set = Ember.set;			
 			var application = container.lookup('application:main');
-			set(application, 'locale', 'en');*/
+			set(application, 'locale', 'en');
 
 
 		}
