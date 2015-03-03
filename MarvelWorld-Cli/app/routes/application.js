@@ -18,13 +18,8 @@ export default Ember.Route.extend({
 	 	setSpainLanguage: function(){
 			console.log("0001");
 		},
-		setEnglishLanguage: function(){
-
-			var set = Ember.set;			
-			var application = container.lookup('application:main');
-			set(application, 'locale', 'en');
-
-
+		setEnglishLanguage: function(){				
+			this.get('container').lookup("application:main").set('defaultLocale', 'en'); 
 		}
   	}	
 });

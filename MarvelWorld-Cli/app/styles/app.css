@@ -12,21 +12,21 @@ textarea{
 }
 
 .main-container{
- 	background: url("/assets/images/background.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+	background: url("/assets/images/background.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
 	width: auto;
 	height: 977px;
 	padding-top: 46px;
 }
 
 .section-container{
-  background-color: #818181;
-    color: #fff;
-    height: auto;
-    margin: 0 auto;
-    min-height: 800px;
-    opacity: 0.9;
-    padding-bottom: 10px;
-    width: 800px;
+	background-color: #818181;
+	color: #fff;
+	height: auto;
+	margin: 0 auto;
+	min-height: 800px;
+	opacity: 0.9;
+	padding-bottom: 10px;
+	width: 800px;
 }
 
 .logo{
@@ -51,7 +51,7 @@ textarea{
 	background-color: #4791DA;
 	padding-bottom: 12px;
 	margin-bottom: 12px;
-	min-height: 600px;
+	min-height: 632px;
 	position: relative;
 }
 
@@ -77,9 +77,9 @@ textarea{
 
 .movie-review-container{
 	color: #000;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0 20px;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0 20px;
 }
 
 .movie-review-container div{
@@ -101,10 +101,10 @@ textarea{
 }
 
 .movie-actors-container{
-  background-color: #ffffce;
-    color: #000;
-    font-size: 14px;
-    margin: 10px 20px;
+	background-color: #ffffce;
+	color: #000;
+	font-size: 14px;
+	margin: 10px 20px;
 }
 
 .movie-actor{
@@ -112,16 +112,16 @@ textarea{
 }
 
 .actors-link{
-	    color: #000;
-    cursor: pointer;
-    font-size: 12px;
-    font-weight: bold;
-    margin-left: 10px;
+	color: #000;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	margin-left: 10px;
 }
 
 .movie-actor-fav{
-  font-weight: bold;
-  margin: 4px 0px;
+	font-weight: bold;
+	margin: 4px 0px;
 }
 
 .movie-code{
@@ -136,12 +136,12 @@ textarea{
 }
 
 .movie-rating-excellent{
-    background: url("/assets/images/gold-star.jpg") repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
-    float: right;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    width: 40px;
+	background: url("/assets/images/gold-star.jpg") repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
+	float: right;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	width: 40px;
 }
 
 .movie-watches{
@@ -155,7 +155,7 @@ textarea{
 
 .movie-summary{
 	position: absolute;
-	bottom: 16px;
+	bottom: 12px;
 }
 
 .premiere{
@@ -164,13 +164,13 @@ textarea{
 }
 
 .comingSoon{
-  color: #FFFF66;
-  font-size: 12px;
+	color: #FFFF66;
+	font-size: 12px;
 }
 
 .released{
-  color: #000;
-  font-size: 12px;
+	color: #000;
+	font-size: 12px;
 }
 
 /* Games */
@@ -186,15 +186,15 @@ textarea{
 }
 
 .game-detail-container{
-  background-color: #94ff94;
-    border: 1px solid #000;
-    border-radius: 25px;
-    color: #000;
-    font-size: 22px;
-    height: 400px;
-    margin: 108px auto;
-    padding: 20px;
-    width: 80%;
+	background-color: #94ff94;
+	border: 1px solid #000;
+	border-radius: 25px;
+	color: #000;
+	font-size: 22px;
+	height: 400px;
+	margin: 108px auto;
+	padding: 20px;
+	width: 80%;
 }
 
 /* Comics */
@@ -234,46 +234,46 @@ textarea{
 }
 
 .event-view-container{
-    background-color: #ffd4e2;
-    border: 1px solid #000;
-    border-radius: 25px;
-    color: #000;
-    font-size: 16px;
-    height: 296px;
-     margin: 60px auto 0;
-    padding: 20px;
-    width: 96%;  
+	background-color: #ffd4e2;
+	border: 1px solid #000;
+	border-radius: 25px;
+	color: #000;
+	font-size: 16px;
+	height: 296px;
+	margin: 60px auto 0;
+	padding: 20px;
+	width: 96%;  
 }
 
 .event-detail-container{
-    background-color: #ffd4e2;
-    border: 1px solid #000;
-    border-radius: 25px;
-    color: #000;
-    font-size: 14px;
-    height: 436px;
-     margin: 60px auto 0;
-    padding: 20px;
-    width: 96%;  
+	background-color: #ffd4e2;
+	border: 1px solid #000;
+	border-radius: 25px;
+	color: #000;
+	font-size: 14px;
+	height: 436px;
+	margin: 60px auto 0;
+	padding: 20px;
+	width: 96%;  
 }
 
 
 .event-detail-container label{
 	text-align: right;
-    width: 86px;    
+	width: 86px;    
 }
 
 .event-detail-top-label{
-  vertical-align: top;
+	vertical-align: top;
 }
 
 
 .event-detail-medium-input{
-  width: 382px !important;
+	width: 382px !important;
 }
 
 .event-detail-small-input{
-  width: 144px !important;
+	width: 144px !important;
 }
 
 .event-actions-container{
@@ -286,13 +286,13 @@ textarea{
 }
 
 .event-view-action{
-background: url('/assets/images/edit.png') no-repeat;
+	background: url('/assets/images/edit.png') no-repeat;
 	width: 16px;
 	height: 16px;
 }
 
 .event-remove-action{
-background: url('/assets/images/delete.png') no-repeat;
+	background: url('/assets/images/delete.png') no-repeat;
 	width: 16px;
 	height: 16px;
 }
@@ -319,9 +319,9 @@ background: url('/assets/images/delete.png') no-repeat;
 
 .event-add-link{
 	color: #fff;
-    float: right;
-    font-size: 14px;
-    margin: 6px;
+	float: right;
+	font-size: 14px;
+	margin: 6px;
 }
 
 /* Common */
@@ -346,16 +346,16 @@ background: url('/assets/images/delete.png') no-repeat;
 }
 
 .landing-container{
- background: url("/assets/images/landing.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    bottom: 0;
-    cursor: pointer;
-    height: 229px;
-    left: 0;
-    margin: 0 auto;
-    position: absolute;
-    right: 0;
-    top: 80px;
-    width: 608px;
+	background: url("/assets/images/landing.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	bottom: 0;
+	cursor: pointer;
+	height: 229px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 80px;
+	width: 608px;
 }
 
 .training-container{
@@ -397,16 +397,16 @@ background: url('/assets/images/delete.png') no-repeat;
 
 .current-date{
 	float: left;
-    margin-left: 12px;
-    font-weight: bold;
+	margin-left: 12px;
+	font-weight: bold;
 }
 
 .app-version{
 	background-color: #fff;
-    color: #FF4D4D;
-    font-size: 12px;
-    margin: 0 auto;
-    width: 800px;
+	color: #FF4D4D;
+	font-size: 12px;
+	margin: 0 auto;
+	width: 800px;
 }
 
 .app-version a{
@@ -425,32 +425,32 @@ background: url('/assets/images/delete.png') no-repeat;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .modal {
-    background-color: #717181;
-    border: 1px solid #000;
-    display: inherit;
-    height: 200px;
-    margin: 160px auto;
-    padding: 1em;
-    position: relative;
-    text-align: left;
-    width: 600px;
+	background-color: #717181;
+	border: 1px solid #000;
+	display: inherit;
+	height: 200px;
+	margin: 160px auto;
+	padding: 1em;
+	position: relative;
+	text-align: left;
+	width: 600px;
 }
 
 .overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .flush--top {
-  margin-top: 0;  
+	margin-top: 0;  
 }
 
 .info-modal-message{
@@ -464,9 +464,9 @@ background: url('/assets/images/delete.png') no-repeat;
 }
 
 .languages-container{
-    float: left;
-    margin-left: 6px;
-    margin-top: 2px;
+	float: left;
+	margin-left: 6px;
+	margin-top: 2px;
 }
 
 .spain-language{	
@@ -479,9 +479,18 @@ background: url('/assets/images/delete.png') no-repeat;
 
 .english-language{
 	background: url("/assets/images/us-flag.png") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);
- 	float: left;
-    height: 16px;
-    margin-left: 4px;
-    width: 16px;
-    cursor: pointer;
+	float: left;
+	height: 16px;
+	margin-left: 4px;
+	width: 16px;
+	cursor: pointer;
+}
+
+.total{
+	background-color: #fff;
+	color: #717171;
+	font-size: 20px;
+	font-weight: bold;
+	width: 102px;
+	clear: both;
 }

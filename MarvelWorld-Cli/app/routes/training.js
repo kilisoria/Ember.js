@@ -20,6 +20,7 @@ export default Ember.Route.extend({
 	    {key: "Helpers", file: "helpers > current-date", line: 1 },	    		
 
 	    {key: "i18n", file: "templates > movies > index", line: 1 },
+	    {key: "i18n", file: "models >  movie", line: 15  },
 		
 		{key: "Observers", file: "controllers >  movies > view", line: 12 },
 
@@ -43,7 +44,9 @@ export default Ember.Route.extend({
 		{key: "Models - Complex - hasMany/ belongsTo", file: "models > event", line: 1 },		
 		{key: "Models - Complex - hasMany/ belongsTo", file: "models > movie", line: 1 },		
 
-		{key: "Mixin", file: "mixins > base", line: 1 },		
+		{key: "Mixin", file: "mixins > base", line: 1 },	
+
+		{key: "Configuration - APP instance variable", file: "controllers >  movies > view", line: 19 }	
 
 	],
 	model:function(){

@@ -1,11 +1,12 @@
 {{partial "layouts/main"}}
 <div class="comics-container">
-<h3>{{upper-case "comics"}}</h3> 
+	<h3>{{upper-case "comics"}}</h3> 
 	<div class="comics-table-container">	
-	{{#ns-table content=model class='table table-striped'}}
-	    {{ns-table-col valuePath='id' title="ID"}}
-	    {{ns-table-col valuePath='name' title="Name"}}    
-	{{/ns-table}}
+		{{#ns-table content=model class='table table-striped'}}
+		{{ns-table-col valuePath='id' title="ID"}}
+		{{ns-table-col valuePath='name' title="Name"}}    
+		{{/ns-table}}
 	</div>
+	<div class="total">{{t "total"}}: {{total}}</div>
 </div>
 

@@ -13,15 +13,15 @@ export default DS.Model.extend({
 	profile: DS.belongsTo('profile'),	
 	year: DS.attr('number'),
 	movieState: function(){    
-    var year = this.get('year');
-    var currentYear = parseInt(moment().format("YYYY"));
-	    if(year === currentYear){
-			return "premiere";			
-	    }else if(year > currentYear){
-	    	return "comingSoon";
-	    }else{
-			return	"released";
-	    }
+		var year = this.get('year');
+		var currentYear = parseInt(moment().format("YYYY"));
+		if(year === currentYear){
+			return this.get('i18n').current.premiere;
+		}else if(year > currentYear){
+			return this.get('i18n').current.comingSoon;
+		}else{
+			return this.get('i18n').current.released;
+		}
 	}.property('year'),
 	code: function(){
 		return '000001A#000' + this.get('id');

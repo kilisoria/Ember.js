@@ -14,7 +14,8 @@ module.exports = function(environment) {
     },
 
     APP: {
-        defaultLocale: 'es'
+        defaultLocale: 'es',
+        awardRate: 10
       // Here you can pass flags/options to your application instance
       // when it is created
     }

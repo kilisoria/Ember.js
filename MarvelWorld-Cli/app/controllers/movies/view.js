@@ -15,20 +15,22 @@ export default Ember.Controller.extend({
 	actorNames: Ember.computed.map('model.actors', function(actor){
 		return actor.get('name').split(' ')[0] + ' ';
 	}),
-	hasGoodRating: Ember.computed.gt('model.review', 9),	
+	/*	hasGoodRating: Ember.computed.gt('model.review', 9),	*/
+	hasGoodRating: function(){
+		var rate = this.get('container').lookup('application:main').get('awardRate');
+		return  this.get('model.review') >= rate;
+	}.property('model.review'),
 	checkReviewChanged: function(e){
-	if(e.target.router.activeTransition === null){
-	console.log('Observers');			
-	var amount = this.get('reviewCountChanged');
-	console.log(amount);			
-	amount++;
-	this.set('reviewCountChanged', amount);		
-		if(amount === 3){
-			alert('OBSERVERS - Wait! Do you have any doubts about the movie? then... watch it again! :)');
+		if(e.target.router.activeTransition === null){		
+			var amount = this.get('reviewCountChanged');	
+			amount++;
+			this.set('reviewCountChanged', amount);		
+			if(amount === 3){
+				alert(this.get('i18n').current.reviewChangedValidation);
+				this.set('reviewCountChanged', 0);
+			}
+		}else{
 			this.set('reviewCountChanged', 0);
 		}
-	}else{
-			this.set('reviewCountChanged', 0);
-	}
-}.observes('model.review')	
+	}.observes('model.review')	
 });

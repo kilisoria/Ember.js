@@ -1,18 +1,19 @@
 {{partial "layouts/main"}}
 <div class="movie-container">
-	<h3>{{upper-case-i18n "movies"}}</h3>
+	<h3>{{upper-case-i18n 'movie' 'name'}}</h3>
 	<ul class="list-undstyled">
 		{{#each}}
 		<li>
 			{{#link-to 'movies.view' this}}			
 			{{upper-case title}}
 			{{/link-to}}						
-			<span {{bind-attr class=movieState}}>{{capitalize-first-letter movieState}}</span>						  
+			<span {{bind-attr class=controller.movieStateClass}}>{{capitalize-first-letter movieState}}</span>			  
 		</li>
 		{{/each}}
 	</ul>
+	<div class="total">{{t "total"}}: {{total}}</div>
 	<div class="movie-summary">
-		<h5>{{upper-case-i18n "movie.summary"}}</h5>
+		<h5>{{upper-case-i18n 'movie' 'summary'}}</h5>
 		<div class="movie-watches">{{t "movie.maxWatches"}} <span>{{maxWatches}} {{t "movie.viewers"}}</span></div>
 		<div class="movie-watches">{{t "movie.minWatches"}}<span>{{minWatches}} {{t "movie.viewers"}}</span></div>
 		<div class="movie-watches">{{t "movie.award"}}
@@ -23,7 +24,8 @@
 			{{/if}}
 		</div>				
 		<div class="movie-watches">
-			<input type="button" {{action "openModal" 'modal' this}} value="All actors" class="btn btn-default">
+			<input type="button" {{action "openModal" 'modal' this}} {{bind-attr value=i18n.current.movie.allActors}} class="btn btn-default">
 		</div>
 	</div>
 </div>
+
