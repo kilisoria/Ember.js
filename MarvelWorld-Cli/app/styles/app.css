@@ -496,7 +496,7 @@ textarea{
 	color: #717171;
 	font-size: 20px;
 	font-weight: bold;
-	width: 102px;
+	width: inherit;
 	clear: both;
 }
 
