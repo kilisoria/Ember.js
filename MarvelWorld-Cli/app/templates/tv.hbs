@@ -1,4 +1,8 @@
 {{partial "layouts/main"}}
 <div class="tv-container">
-	{{partial "comingsoon"}}
+	<ul>
+		{{#each}}
+		  <li>{{name}}</li>
+		{{/each}}
+	</ul>
 </div>

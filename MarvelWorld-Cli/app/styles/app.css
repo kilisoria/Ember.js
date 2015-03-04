@@ -214,7 +214,7 @@ textarea{
 .tv-container{
 	clear: both;
 	background-color: #FFFF66;
-	color: #fff !important;	
+	color: #000 !important;	
 }
 
 /* Events*/
