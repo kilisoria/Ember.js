@@ -8,6 +8,9 @@ export default Ember.Controller.extend(Base, {
 			},
 			goToGithub:function(){
 				window.open('https://github.com/kilisoria','_blank');
+			},
+			goToRoadMap: function(){
+				this.transitionToRoute('roadmap');
 			}
 		}  
 });

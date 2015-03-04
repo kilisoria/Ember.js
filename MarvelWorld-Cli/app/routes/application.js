@@ -1,6 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+	setLanguage: function(language){
+		var set = Ember.set;
+			var application = this.get('container').lookup('application:main');
+			set(application, 'defaultLocale', language);
+			this.transitionTo('index');
+	},
 	actions: {
 		openModal: function(controller, model) {
 			this.controllerFor(controller).set('model', model);
@@ -16,17 +22,10 @@ export default Ember.Route.extend({
 			});
 		},
 		setSpainLanguage: function(){
-			console.log("0001");
+			this.setLanguage('es');
 		},
 		setEnglishLanguage: function(){	
-			var set = Ember.set;
-			var application = this.get('container').lookup('application:main');
-			set(application, 'defaultLocale', 'en');
-
-			console.log(this.get('container').lookup('application:main'));
-
-			this.transitionTo('index');
-
+			this.setLanguage('en');
 		}
 	}	
 });

@@ -16,14 +16,15 @@ Router.map(function() {
     this.route("view", {path:"view/:game_id"});   
   });
 
- this.resource("events", function(){
-    this.route("view", {path:"view/:event_id"});
-    this.route("new");
-  });
-  
+  this.resource("events", function(){
+     this.route("view", {path:"view/:event_id"});
+     this.route("new");
+   });
+
   this.route("tv");
   this.route("event");
   this.route("training");
+  this.route("roadmap");
 });
 
 export default Router;

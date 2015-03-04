@@ -414,6 +414,11 @@ textarea{
 	cursor: pointer;
 }
 
+.app-version a:nth-child(4){
+	color:#818181;
+	float: right;
+}
+
 .app-version a:nth-child(3){
 	float: right;
 }
@@ -494,3 +499,18 @@ textarea{
 	width: 102px;
 	clear: both;
 }
+
+.roadmap-container{
+	color: #000;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.roadmap-container ul{
+	color:#fff;
+	font-weight: bold;
+}
+
+.roadmap-container div:nth-child(1){
+	font-size: 26px;
+};
