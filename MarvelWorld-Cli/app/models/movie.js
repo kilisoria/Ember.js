@@ -16,13 +16,17 @@ export default DS.Model.extend({
 		var year = this.get('year');
 		var currentYear = parseInt(moment().format("YYYY"));
 		if(year === currentYear){
+			this.set('stateCode', 'premiere');
 			return this.get('i18n').current.premiere;
 		}else if(year > currentYear){
+			this.set('stateCode', 'comingSoon');
 			return this.get('i18n').current.comingSoon;
 		}else{
+			this.set('stateCode', 'released');
 			return this.get('i18n').current.released;
 		}
 	}.property('year'),
+	stateCode: DS.attr('string'),
 	code: function(){
 		return '000001A#000' + this.get('id');
 	}.property('id')

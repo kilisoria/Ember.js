@@ -1,0 +1,6 @@
+<li>
+	{{#link-to 'movies.view' model}}			
+	{{upper-case model.title}}
+	{{/link-to}}								
+	<span {{bind-attr class=movieStateClass}}>{{capitalize-first-letter model.movieState}}</span>			  
+</li>

@@ -3,12 +3,7 @@
 	<h3>{{upper-case-i18n 'movie' 'name'}}</h3>
 	<ul class="list-undstyled">
 		{{#each}}
-		<li>
-			{{#link-to 'movies.view' this}}			
-			{{upper-case title}}
-			{{/link-to}}						
-			<span {{bind-attr class=controller.movieStateClass}}>{{capitalize-first-letter movieState}}</span>			  
-		</li>
+		{{render "movies/index-item" this}}
 		{{/each}}
 	</ul>
 	<div class="total">{{t "total"}}: {{total}}</div>
