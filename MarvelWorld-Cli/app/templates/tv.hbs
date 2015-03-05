@@ -1,8 +1,2 @@
 {{partial "layouts/main"}}
-<div class="tv-container">
-	<ul>
-		{{#each}}
-		  <li>{{name}}</li>
-		{{/each}}
-	</ul>
-</div>
+{{llama-table rows=tableData colums=this config=tableConfig}}

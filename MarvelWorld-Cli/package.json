@@ -41,5 +41,8 @@
     "express": "^4.8.5",
     "glob": "^4.0.5",
     "morgan": "^1.5.1"
+  },
+  "dependencies": {
+    "ember-cli-llama-table": "^0.3.2"
   }
 }
