@@ -1,1 +1,1 @@
-The idea here is test all news on Ember.js
+[DEPRECATED] Used here the start kit not Cli.
