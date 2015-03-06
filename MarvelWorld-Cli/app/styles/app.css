@@ -147,6 +147,7 @@ textarea{
 .movie-watches{
 	color:#000;
 	font-size: 14px;
+	font-weight: bold;
 }
 
 .movie-watches span{
@@ -511,6 +512,6 @@ textarea{
 	font-weight: bold;
 }
 
-.roadmap-container div:nth-child(1){
+.roadmap-container div{
 	font-size: 26px;
 };

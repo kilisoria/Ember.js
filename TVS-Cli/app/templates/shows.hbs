@@ -1,0 +1,22 @@
+<div>
+	<ul>
+		<li>
+			<div>{{ t 'serie.name'}}</div>
+			<div>{{t 'serie.genre'}}</div>
+			<div>{{t 'serie.channel'}}</div>
+			<div>{{t 'serie.seasons'}}</div>
+			<div>{{t 'serie.status'}}</div>
+		</li>
+	</ul>
+	<ul>
+		{{#each item in model}}
+		<li>
+			<div class="{{nameClass}}">{{item.name}}</div>
+			<div>{{item.genre}}</div>
+			<div>{{item.originalChannel}}</div>
+			<div>{{item.numberSeasons}}</div>
+			<div class="{{statusClass}}">{{item.status}}</div>
+		</li>
+		{{/each}}		
+	</ul>
+</div>

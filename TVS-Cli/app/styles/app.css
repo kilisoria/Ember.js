@@ -1,0 +1,52 @@
+body{
+	background-color: #FAFAFC;
+}
+
+ul{
+	list-style: georgian;
+}
+
+ul li{
+	clear: both;
+}
+
+ul li div{
+	float: left;
+	margin: 0 6px;
+}
+
+ul li div:nth-child(1){
+	width: 300px;
+}
+
+ul li div:nth-child(2){
+	width: 100px;
+}
+
+ul li div:nth-child(3){
+	width: 200px;
+}
+
+ul li div:nth-child(4),
+ul li div:nth-child(5)
+{
+	width: 100px;
+}
+
+.show-name{
+	font-size: 18px;
+	color:red;
+	cursor: pointer;
+}
+
+.show-status{
+	font-size: 11px;
+}
+
+.landing{
+	background: url('/assets/images/next.jpg');
+	background-size: cover;
+	height: 1200px;
+	width: 100%;
+	cursor: pointer;
+}
