@@ -45,8 +45,8 @@ ul li div:nth-child(5)
 
 .landing{
 	background: url('/assets/images/next.jpg');
-	background-size: cover;
-	height: 1200px;
-	width: 100%;
-	cursor: pointer;
+    cursor: pointer;
+    height: 600px;
+    margin: 0 auto;
+    width: 675px;
 }
