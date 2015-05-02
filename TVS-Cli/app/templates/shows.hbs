@@ -1,4 +1,10 @@
-<div>
+{{#each flash in flashes.queue}}
+  {{flash-message flash=flash}}
+{{/each}}
+
+<div class="show-container">
+	<!-- {{#link-to "new" class="btn-success"}}New{{/link-to}} -->
+	
 	<ul>
 		<li>
 			<div>{{ t 'serie.name'}}</div>
@@ -11,7 +17,7 @@
 	<ul>
 		{{#each item in model}}
 		<li>
-			<div class="{{nameClass}}">{{item.name}}</div>
+			<div class="{{nameClass}}" {{action "showDetail" item}}>{{item.name}}</div>
 			<div>{{item.genre}}</div>
 			<div>{{item.originalChannel}}</div>
 			<div>{{item.numberSeasons}}</div>

@@ -1,9 +1,12 @@
 body{
 	background-color: #FAFAFC;
+	height: 100%;
+	width: 100%;
 }
 
 ul{
 	list-style: georgian;
+	list-style-type: lao;
 }
 
 ul li{
@@ -45,8 +48,15 @@ ul li div:nth-child(5)
 
 .landing{
 	background: url('/assets/images/next.jpg');
-    cursor: pointer;
-    height: 600px;
-    margin: 0 auto;
-    width: 675px;
+	cursor: pointer;
+	height: 600px;
+	margin: 0 auto;
+	width: 675px;
+}
+
+.show-container ul:nth-child(1){
+	font-weight: bold;
+	font-size: 20px;
+	list-style: none;
+	padding-bottom: 20px;
 }

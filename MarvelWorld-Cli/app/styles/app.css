@@ -9,6 +9,7 @@ a{
 
 textarea{
 	resize:none;
+	width: 100%;
 }
 
 .main-container{
@@ -38,6 +39,7 @@ textarea{
 
 .menu-container{
 	padding-top: 20px;
+	font-family: 'Lobster', cursive;
 }
 
 .menu-container a:nth-child(2){
@@ -53,6 +55,7 @@ textarea{
 	margin-bottom: 12px;
 	min-height: 632px;
 	position: relative;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .movie-container ul{
@@ -178,12 +181,17 @@ textarea{
 .game-container{
 	clear: both;
 	font-size: 18px;
-	background-color: green;
+	background-color: #D2E3E9;
 	min-height: 600px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .game-container ul{
 	list-style-image: url('/assets/images/game-list-style.png');
+}
+
+.game-container a{
+	color:#000;
 }
 
 .game-detail-container{
@@ -201,14 +209,16 @@ textarea{
 /* Comics */
 .comics-container{
 	clear: both;
-	background-color: #FF3300;
+	background-color: #1D728F;
 	color: #000 !important;
 	padding-bottom: 14px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .comics-table-container{
 	background-color:#fff;
 	margin:20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* TV */
@@ -216,17 +226,19 @@ textarea{
 	clear: both;
 	background-color: #FFFF66;
 	color: #000 !important;	
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Events*/
 .events-container{
 	clear: both;
-	background-color: #ff6677;
+	background-color: #4D4DFF;
 	color: #fff !important;		
 	min-height: 600px;
 	font-size: 18px;
 	height: auto;
 	padding-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -247,7 +259,7 @@ textarea{
 }
 
 .event-detail-container{
-	background-color: #ffd4e2;
+	background-color: #818181;
 	border: 1px solid #000;
 	border-radius: 25px;
 	color: #000;
@@ -515,3 +527,4 @@ textarea{
 .roadmap-container div{
 	font-size: 26px;
 };
+
